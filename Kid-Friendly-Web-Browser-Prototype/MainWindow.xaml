@@ -10,8 +10,23 @@
         WindowStartupLocation="CenterScreen" WindowState="Maximized">
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
-        <Grid Height="480" Width="800"/>
+        <Grid Height="480" Width="800">
+            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="307,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
+            <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="192,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
+            <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="422,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
+            <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="537,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
+            <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Margin="713,444,0,0" VerticalAlignment="Top" Width="29" Height="26"/>
+            <Button x:Name="button5" Content="Button" HorizontalAlignment="Left" Margin="761,444,0,0" VerticalAlignment="Top" Width="29" Height="26"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="77,52,0,0" VerticalAlignment="Top" Width="185"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="307,52,0,0" VerticalAlignment="Top" Width="185"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="537,52,0,0" VerticalAlignment="Top" Width="185"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="77,208,0,0" VerticalAlignment="Top" Width="185"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="307,208,0,0" VerticalAlignment="Top" Width="185"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="537,208,0,0" VerticalAlignment="Top" Width="185"/>
+            <Button x:Name="button6" Content="Button" HorizontalAlignment="Left" Margin="761,128,0,0" VerticalAlignment="Top" Width="29" Height="116"/>
+            <Button x:Name="button7" Content="Button" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="29" Height="116"/>
+        </Grid>
     </Viewbox>
-    
-    
+
+
 </Window>
