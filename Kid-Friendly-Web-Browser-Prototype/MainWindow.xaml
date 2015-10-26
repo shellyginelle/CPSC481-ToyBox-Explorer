@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
         mc:Ignorable="d"
-        Title="Toybox Explorer" Height="300" Width="500"
+        Title="Toybox Explorer" Height="480" Width="800"
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized">
-    <Grid>
-        
-    </Grid>
+
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Height="480" Width="800"/>
+    </Viewbox>
+    
+    
 </Window>
