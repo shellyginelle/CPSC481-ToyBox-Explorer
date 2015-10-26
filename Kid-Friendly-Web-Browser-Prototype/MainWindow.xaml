@@ -25,6 +25,7 @@
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="77,208,0,0" VerticalAlignment="Top" Width="185"/>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="307,208,0,0" VerticalAlignment="Top" Width="185"/>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="537,208,0,0" VerticalAlignment="Top" Width="185"/>
+            <ProgressBar HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="800"/>
         </Grid>
     </Viewbox>
 
