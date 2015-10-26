@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Toybox Explorer" Height="300" Width="500"
+        WindowStyle="None" ResizeMode="NoResize"  
+        WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
         
     </Grid>
