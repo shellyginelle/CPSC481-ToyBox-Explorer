@@ -14,7 +14,7 @@
             <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="478,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
             <Button x:Name="button1" Content="Button 1" HorizontalAlignment="Left" Margin="740,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
             <Button x:Name="button2" Content="Button 2" HorizontalAlignment="Left" Margin="1003,857,0,0" VerticalAlignment="Top" Width="180" Height="180" RenderTransformOrigin="0.5,0.5"/>
-            <Button x:Name="button3" Content="Button 3" HorizontalAlignment="Left" Margin="1264,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
+            <Button x:Name="button3" Content="Button 3" Click="ButtonClicked" HorizontalAlignment="Left" Margin="1264,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
             <Button x:Name="button4" Content="Button 4" HorizontalAlignment="Left" Margin="1701,966,0,0" VerticalAlignment="Top" Width="72" Height="71"/>
             <Button x:Name="button5" Content="Button 5" HorizontalAlignment="Left" Margin="1803,966,0,0" VerticalAlignment="Top" Width="72" Height="71"/>
             <Button x:Name="buttonRight" Content="R. Button" HorizontalAlignment="Left" Margin="1778,281,0,0" VerticalAlignment="Top" Width="97" Height="361"/>
@@ -25,7 +25,7 @@
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="740,131,0,0" VerticalAlignment="Top" Width="443"/>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="740,499,0,0" VerticalAlignment="Top" Width="443"/>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="1264,131,0,0" VerticalAlignment="Top" Width="443"/>
-            <ProgressBar  HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="1920"/>
+            <ProgressBar  HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="1920"/>
         </Grid>
     </Viewbox>
 

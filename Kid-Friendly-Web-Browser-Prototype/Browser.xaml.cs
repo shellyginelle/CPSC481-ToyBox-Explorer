@@ -10,25 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Kid_Friendly_Web_Browser_Prototype
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Browser : Window
     {
-        public MainWindow()
+        public Browser()
         {
             InitializeComponent();
         }
 
         private void ButtonClicked(object sender, RoutedEventArgs e)
         {
-          
-            Browser browserWindow = new Browser();
+
+            MainWindow browserWindow = new MainWindow();
             browserWindow.Show();
             this.Close();
         }
