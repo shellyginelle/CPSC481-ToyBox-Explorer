@@ -5,27 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
         mc:Ignorable="d"
-        Title="Toybox Explorer" Height="480" Width="800"
+        Title="Toybox Explorer" Height="1080" Width="1920"
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized">
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
-        <Grid Height="480" Width="800">
-            <Button x:Name="button" Content="Button 1" HorizontalAlignment="Left" Margin="192,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
-            <Button x:Name="button1" Content="Button 2" HorizontalAlignment="Left" Margin="307,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
-            <Button x:Name="button2" Content="Button 3" HorizontalAlignment="Left" Margin="422,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
-            <Button x:Name="button3" Content="Button 4" HorizontalAlignment="Left" Margin="537,400,0,0" VerticalAlignment="Top" Width="70" Height="70"/>
-            <Button x:Name="button4" Content="Button 5" HorizontalAlignment="Left" Margin="713,444,0,0" VerticalAlignment="Top" Width="29" Height="26"/>
-            <Button x:Name="button5" Content="Button 6" HorizontalAlignment="Left" Margin="761,444,0,0" VerticalAlignment="Top" Width="29" Height="26"/>
-            <Button x:Name="buttonRight" Content="R. Button" HorizontalAlignment="Left" Margin="761,128,0,0" VerticalAlignment="Top" Width="29" Height="116"/>
-            <Button x:Name="buttonLeft" Content="L. Button" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="29" Height="116"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="77,52,0,0" VerticalAlignment="Top" Width="185"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="307,52,0,0" VerticalAlignment="Top" Width="185"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="537,52,0,0" VerticalAlignment="Top" Width="185"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="77,208,0,0" VerticalAlignment="Top" Width="185"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="307,208,0,0" VerticalAlignment="Top" Width="185"/>
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="114" Margin="537,208,0,0" VerticalAlignment="Top" Width="185"/>
-            <ProgressBar HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="800"/>
+        <Grid Height="1080" Width="1920">
+            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="478,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
+            <Button x:Name="button1" Content="Button 1" HorizontalAlignment="Left" Margin="740,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
+            <Button x:Name="button2" Content="Button 2" HorizontalAlignment="Left" Margin="1003,857,0,0" VerticalAlignment="Top" Width="180" Height="180" RenderTransformOrigin="0.5,0.5"/>
+            <Button x:Name="button3" Content="Button 3" HorizontalAlignment="Left" Margin="1264,857,0,0" VerticalAlignment="Top" Width="180" Height="180"/>
+            <Button x:Name="button4" Content="Button 4" HorizontalAlignment="Left" Margin="1701,966,0,0" VerticalAlignment="Top" Width="72" Height="71"/>
+            <Button x:Name="button5" Content="Button 5" HorizontalAlignment="Left" Margin="1803,966,0,0" VerticalAlignment="Top" Width="72" Height="71"/>
+            <Button x:Name="buttonRight" Content="R. Button" HorizontalAlignment="Left" Margin="1778,281,0,0" VerticalAlignment="Top" Width="97" Height="361"/>
+            <Button x:Name="buttonLeft" Content="L. Button" HorizontalAlignment="Left" Margin="53,281,0,0" VerticalAlignment="Top" Width="97" Height="361"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="215,131,0,0" VerticalAlignment="Top" Width="443"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="215,499,0,0" VerticalAlignment="Top" Width="443"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="1264,499,0,0" VerticalAlignment="Top" Width="443"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="740,131,0,0" VerticalAlignment="Top" Width="443"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="740,499,0,0" VerticalAlignment="Top" Width="443"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="1264,131,0,0" VerticalAlignment="Top" Width="443"/>
+            <ProgressBar  HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="1920"/>
         </Grid>
     </Viewbox>
 
