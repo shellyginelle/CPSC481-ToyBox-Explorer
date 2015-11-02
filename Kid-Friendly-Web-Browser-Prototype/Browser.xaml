@@ -12,14 +12,38 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1080" Width="1920">
 
-            <ProgressBar  HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="1920"/>
-            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="129" Margin="0,80,0,0" Stroke="Black" VerticalAlignment="Top" Width="1920"/>
-            <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="131,89,0,0" VerticalAlignment="Top" Width="135" Height="110"/>
-            <Button x:Name="home" Click="ButtonClicked" Content="Home" HorizontalAlignment="Left" Margin="400,89,0,0" VerticalAlignment="Top" Width="135" Height="110"/>
-            <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="1797,209,0,0" VerticalAlignment="Top" Width="123" Height="460"/>
-            <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="1797,669,0,0" VerticalAlignment="Top" Width="123" Height="411"/>
+            <ProgressBar  HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="1920" Value="70" BorderBrush="Gray" Background="white" Foreground="#3F51B5"/>
+            <Rectangle Fill="#FFF4F4F5" Height="125" Margin="0,58,0,0" Stroke="Black" VerticalAlignment="Top"/>
+
+            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="649,66,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="images/heart.png" Stretch ="Uniform" Height="105" Width="102"/>
+            </Button>
+
+            <Button x:Name="backButton"  HorizontalAlignment="Left" Margin="80,66,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="images/back.png" Stretch ="Uniform" Height="105" Width="102"/>
+            </Button>
+
+
+            <Button x:Name="homeButton"  HorizontalAlignment="Left" Margin="357,66,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
+            </Button>
+
+            <Button x:Name="up"  HorizontalAlignment="Left" Margin="1782,183,0,0" VerticalAlignment="Top" Width="138" Height="427"  Background="Transparent">
+                <Image Source="images/arrowUp.png" Stretch ="Uniform" Height="134" Width="132"/>
+            </Button>
+
+            <Button x:Name="down" HorizontalAlignment="Left" Margin="1782,610,0,0" VerticalAlignment="Top" Width="138" Height="470"  Background="Transparent">
+                <Image Source="images/arrowDown.png" Stretch ="Uniform" Height="134" Width="132"/>
+            </Button>
+            <Image x:Name="image" Source ="images/thumbnails/fullWebsite.png" Stretch ="Fill" HorizontalAlignment="Left" Height="897" Margin="0,183,0,0" VerticalAlignment="Top" Width="1782"/>
+
+
+
+
+
         </Grid>
     </Viewbox>
+
 
 
 </Window>

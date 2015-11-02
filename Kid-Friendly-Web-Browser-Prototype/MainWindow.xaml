@@ -11,49 +11,50 @@
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1080" Width="1920">
-            <Button x:Name="games"  HorizontalAlignment="Left" Margin="379,857,0,0" VerticalAlignment="Top" Width="180" Height="180"  Background="Transparent">
-                <Image Source="images/controller.png" Stretch ="Uniform" Height="176" Width="180"/>
+
+            <Button x:Name="games"  HorizontalAlignment="Left" Margin="379,857,0,0" VerticalAlignment="Top" Width="180" Height="180"  Background="Transparent" >
+                <Image Source="images/controller.png" Stretch ="Uniform" Height="153" Width="157"/>
             </Button>
 
-            <Button x:Name="videos" HorizontalAlignment="Left" Margin="700,857,0,0" VerticalAlignment="Top" Width="180" Height="180"  Background="Transparent">
-                <Image Source="images/videos.png" Stretch ="Uniform" Height="144" Width="146"/>
+            <Button x:Name="video" HorizontalAlignment="Left" Margin="700,857,0,0" VerticalAlignment="Top" Width="180" Height="180"  Background="Transparent"  BorderThickness="0"   >
+                <Image Source="images/video.png" Stretch ="Uniform" Height="156" Width="160"/>
             </Button>
 
-            <Button x:Name="button2"  HorizontalAlignment="Left" Margin="1040,857,0,0" VerticalAlignment="Top" Width="180" Height="180" RenderTransformOrigin="0.5,0.5"  Background="Transparent">
-                <Image Source="images/book.png" Stretch ="Uniform" Height="168" Width="172"/>
+            <Button x:Name="button2"  HorizontalAlignment="Left" Margin="1040,857,0,0" VerticalAlignment="Top" Width="180" Height="180" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
+                <Image Source="images/book.png" Stretch ="Uniform" Height="158" Width="162"/>
             </Button>
 
-            <Button x:Name="button3"  HorizontalAlignment="Left" Margin="1381,857,0,0" VerticalAlignment="Top" Width="180" Height="180"  Background="Transparent">
-                <Image Source="images/heart.png" Stretch ="Uniform" Height="176" Width="173"/>
+            <Button x:Name="button3"  HorizontalAlignment="Left" Margin="1381,857,0,0" VerticalAlignment="Top" Width="180" Height="180"  Background="Transparent"  BorderThickness="0"  >
+                <Image Source="images/heart.png" Stretch ="Uniform" Height="166" Width="163"/>
             </Button>
 
-            <Button x:Name="buttonRight" HorizontalAlignment="Left" Margin="1597,334,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent">
+            <Button x:Name="buttonRight" HorizontalAlignment="Left" Margin="1597,334,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="162,334,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent">
+            <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="162,334,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="search" HorizontalAlignment="Left" Margin="1714,966,0,0" VerticalAlignment="Top" Width="72" Height="71" Click="search_Click"  Background="Transparent">
+            <Button x:Name="search" HorizontalAlignment="Left" Margin="1714,966,0,0" VerticalAlignment="Top" Width="72" Height="71" Click="search_Click"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/search.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="settings" Click="ButtonClicked" HorizontalAlignment="Left" Margin="1806,966,0,0" VerticalAlignment="Top" Width="72" Height="71 "  Background="Transparent">
+            <Button x:Name="settings" Click="ButtonClicked" HorizontalAlignment="Left" Margin="1806,966,0,0" VerticalAlignment="Top" Width="72" Height="71 "  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/settings.png" Stretch ="Uniform"/>
             </Button>
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="1000,499,0,0" VerticalAlignment="Top" Width="443">
                 <Image x:Name="image3" Source="images/thumbnails/sesame.png" Stretch ="Fill" Margin="-0.8,0.2,-0.6,-0.4"/>
             </Border>
-            
+
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="477,131,0,0" VerticalAlignment="Top" Width="443">
                 <Image x:Name="image"  Source="images/thumbnails/dora.png" Stretch ="Fill"/>
             </Border>
-            
+
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="477,499,0,0" VerticalAlignment="Top" Width="443">
                 <Image x:Name="image2"  Source="images/thumbnails/turtles.png" Stretch ="Fill"/>
             </Border>
-            
+
             <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="302" Margin="1000,131,0,0" VerticalAlignment="Top" Width="443">
                 <Image x:Name="image1"  Source="images/thumbnails/trees.png" Stretch ="Fill"/>
             </Border>
