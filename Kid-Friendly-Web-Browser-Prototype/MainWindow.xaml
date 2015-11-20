@@ -59,7 +59,7 @@
                 <Image x:Name="image1"  Source="images/thumbnails/trees.png" Stretch ="Fill"/>
             </Border>
 
-            <ProgressBar  HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#3F51B5"/>
+            <ProgressBar  HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#536DFE"/>
 
         </Grid>
     </Viewbox>

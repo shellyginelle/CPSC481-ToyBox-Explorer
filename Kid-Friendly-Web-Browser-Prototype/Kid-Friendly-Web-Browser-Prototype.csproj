@@ -105,21 +105,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\controller.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\heart.png" />
-    <Resource Include="images\book.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\rightArrow.png" />
-    <Resource Include="images\leftArrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\search.png" />
-    <Resource Include="images\settings.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\thumbnails\trees.PNG" />
   </ItemGroup>
   <ItemGroup>
@@ -130,20 +115,25 @@
     <Resource Include="images\thumbnails\dora.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\video.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\back.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\home.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\arrowDown.png" />
     <Resource Include="images\arrowUp.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\thumbnails\fullWebsite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
+    <Resource Include="images\book.png" />
+    <Resource Include="images\controller.png" />
+    <Resource Include="images\heart.png" />
+    <Resource Include="images\home.png" />
+    <Resource Include="images\leftArrow.png" />
+    <Resource Include="images\rightArrow.png" />
+    <Resource Include="images\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\search.png" />
+    <Resource Include="images\settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
