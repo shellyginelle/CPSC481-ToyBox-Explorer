@@ -12,7 +12,7 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1080" Width="1920">
 
-            <ProgressBar  HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="1920" Value="70" BorderBrush="Gray" Background="white" Foreground="#536DFE"/>
+            <ProgressBar  HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="1920" Value="70" BorderBrush="Gray" Background="white" Foreground="#4255bd"/>
             <Rectangle Fill="#FFF4F4F5" Height="125" Margin="0,58,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
             <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="649,66,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
