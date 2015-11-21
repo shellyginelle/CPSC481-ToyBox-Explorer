@@ -33,9 +33,5 @@ namespace Kid_Friendly_Web_Browser_Prototype
             this.Close();
         }
 
-        private void search_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
