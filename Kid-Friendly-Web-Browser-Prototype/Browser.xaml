@@ -12,19 +12,19 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
 
-            <ProgressBar  HorizontalAlignment="Left" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1130"/>
-            <Rectangle Fill="#FFF4F4F5" Height="125" Margin="0,70,0,0" Stroke="Black" VerticalAlignment="Top"/>
+            <ProgressBar  HorizontalAlignment="Left" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
+            <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,65,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
-            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="528,84,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="525,77,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/heartPlus.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
 
-            <Button x:Name="backButton"  HorizontalAlignment="Left" Margin="80,84,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="backButton"  HorizontalAlignment="Left" Margin="80,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/back.png" Stretch ="Uniform" Height="95" Width="102"/>
             </Button>
 
 
-            <Button x:Name="homeButton"  Click="ButtonClicked" HorizontalAlignment="Left" Margin="291,84,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="homeButton"  Click="ButtonClicked" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
 

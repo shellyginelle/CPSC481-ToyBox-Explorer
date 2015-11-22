@@ -11,16 +11,17 @@
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
+            <ProgressBar  HorizontalAlignment="Left" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
 
             <Button x:Name="games" Margin="417,984,1311,36"  Background="Transparent" >
                 <Image Source="images/controller.png" Stretch ="Uniform" Height="153" Width="157"/>
             </Button>
 
-            <Button x:Name="video" HorizontalAlignment="Left" Margin="722,984,0,36" Width="180"  Background="Transparent"  BorderThickness="0"   >
+            <Button x:Name="video" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent"  BorderThickness="0"   >
                 <Image Source="images/video.png" Stretch ="Uniform" Height="156" Width="160"/>
             </Button>
 
-            <Button x:Name="button2" Margin="1017,984,721,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="button2" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/book.png" Stretch ="Uniform" Height="158" Width="162"/>
             </Button>
 
@@ -32,7 +33,7 @@
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="85,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
             </Button>
 
@@ -44,23 +45,22 @@
                 <Image Source="images/settings.png" Stretch ="Uniform"/>
             </Button>
 
-            <Border BorderBrush="Black" BorderThickness="1" Height="332" Margin="1018,579,416,0" VerticalAlignment="Top">
-                <Image x:Name="image3" Source="images/thumbnails/sesame.png" Stretch ="Fill" Margin="0,-1,-1,1"/>
-            </Border>
 
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="332" Margin="417,157,0,0" VerticalAlignment="Top" Width="485">
-                <Image x:Name="image"  Source="images/thumbnails/dora.png" Stretch ="Fill" Margin="-1,0,0,-1"/>
-            </Border>
+            <Button x:Name="sesame"  HorizontalAlignment="Left" Margin="1017,579,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+                <Image Source="images/thumbnails/sesame.png" Stretch ="Fill" Width="484"/>
+            </Button>
 
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="331" Margin="417,580,0,0" VerticalAlignment="Top" Width="485">
-                <Image x:Name="image2"  Source="images/thumbnails/turtles.png" Stretch ="Fill" Margin="1,-1,-1,1"/>
-            </Border>
+            <Button x:Name="dora"  HorizontalAlignment="Left" Margin="417,157,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+                <Image Source="images/thumbnails/dora.png" Stretch ="Fill" Width="484"/>
+            </Button>
 
-            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="332" Margin="1017,157,0,0" VerticalAlignment="Top" Width="487">
-                <Image x:Name="image1"  Source="images/thumbnails/trees.png" Stretch ="Fill" Margin="-1,-1,1,1"/>
-            </Border>
+            <Button x:Name="turtles"  HorizontalAlignment="Left" Margin="417,579,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+                <Image Source="images/thumbnails/turtles.png" Stretch ="Fill" Width="484"/>
+            </Button>
 
-            <ProgressBar  HorizontalAlignment="Left" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1130"/>
+            <Button x:Name="trees"  HorizontalAlignment="Left" Margin="1020,157,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+                <Image Source="images/thumbnails/trees.png" Stretch ="Fill" Width="484"/>
+            </Button>
 
         </Grid>
     </Viewbox>
