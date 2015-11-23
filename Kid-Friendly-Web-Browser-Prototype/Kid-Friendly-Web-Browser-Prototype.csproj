@@ -115,9 +115,6 @@
     <Resource Include="images\thumbnails\dora.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\thumbnails\fullWebsite.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\arrowDown.png" />
     <Resource Include="images\arrowUp.png" />
     <Resource Include="images\back.png" />
@@ -135,6 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\heartPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\thumbnails\scrollable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\thumbnails\hello.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

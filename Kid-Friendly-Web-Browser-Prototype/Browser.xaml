@@ -35,7 +35,7 @@
             <Button x:Name="down" HorizontalAlignment="Left" Margin="1782,696,0,0" VerticalAlignment="Top" Width="138" Height="504"  Background="Transparent">
                 <Image Source="images/arrowDown.png" Stretch ="Uniform" Height="134" Width="132"/>
             </Button>
-            <Image x:Name="image" Source ="images/thumbnails/fullWebsite.png" Stretch ="Fill" HorizontalAlignment="Left" Height="1005" Margin="0,195,0,0" VerticalAlignment="Top" Width="1782"/>
+            <Image x:Name="image" Source ="images/thumbnails/scrollable.png" Stretch ="Fill" HorizontalAlignment="Left" Height="1005" Margin="0,195,0,0" VerticalAlignment="Top" Width="1782"/>
 
 
 

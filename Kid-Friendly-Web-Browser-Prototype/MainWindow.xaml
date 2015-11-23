@@ -48,18 +48,28 @@
 
             <Button x:Name="sesame"  HorizontalAlignment="Left" Margin="1017,579,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
                 <Image Source="images/thumbnails/sesame.png" Stretch ="Fill" Width="484"/>
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
+                </Button.Effect>
             </Button>
 
             <Button x:Name="dora"  HorizontalAlignment="Left" Margin="417,157,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
                 <Image Source="images/thumbnails/dora.png" Stretch ="Fill" Width="484"/>
+                <Button.Effect><DropShadowEffect BlurRadius="13" ShadowDepth="2" /></Button.Effect>
             </Button>
 
             <Button x:Name="turtles"  HorizontalAlignment="Left" Margin="417,579,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
                 <Image Source="images/thumbnails/turtles.png" Stretch ="Fill" Width="484"/>
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
+                </Button.Effect>
             </Button>
 
             <Button x:Name="trees"  HorizontalAlignment="Left" Margin="1020,157,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
                 <Image Source="images/thumbnails/trees.png" Stretch ="Fill" Width="484"/>
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
+                </Button.Effect>
             </Button>
 
         </Grid>
