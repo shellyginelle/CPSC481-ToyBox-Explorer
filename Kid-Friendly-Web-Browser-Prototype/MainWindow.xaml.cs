@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,12 +26,22 @@ namespace Kid_Friendly_Web_Browser_Prototype
             InitializeComponent();
         }
 
-        private void ButtonClicked(object sender, RoutedEventArgs e)
+        private void goToWebsite(object sender, RoutedEventArgs e)
         {
-          
+
             Browser browserWindow = new Browser();
             browserWindow.Show();
             this.Close();
+        }
+
+        private void progressBarChange(object sender, EventArgs e)
+        {
+            // 1800 seconds = 30 minutes MAX TIME FOR WEB BROWSER 
+            for (int i = 0; i < 1800; i++)
+            {
+                pbStatus.Dispatcher.Invoke(() => pbStatus.Value = i, System.Windows.Threading.DispatcherPriority.Background);
+                Thread.Sleep(1800);
+            }
         }
 
     }
