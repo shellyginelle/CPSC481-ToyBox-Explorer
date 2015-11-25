@@ -22,20 +22,38 @@
                 <Image Source="images/video.png" Stretch ="Uniform" Height="156" Width="160"/>
             </Button>
 
-            <Button x:Name="button2" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="learn" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/book.png" Stretch ="Uniform" Height="158" Width="162"/>
             </Button>
 
-            <Button x:Name="button3" Margin="1324,984,416,36"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="favorite" Margin="1324,984,416,36"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/heart.png" Stretch ="Uniform" Height="156" Width="142"/>
             </Button>
 
             <Button x:Name="buttonRight" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\pageswipe.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
             <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\pageswipe.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
             <Button x:Name="search" HorizontalAlignment="Left" Margin="1659,1071,0,0" VerticalAlignment="Top" Width="72" Height="71"  Background="Transparent"  BorderThickness="0"  >
@@ -52,11 +70,31 @@
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
                 </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\musicbox.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
             <Button x:Name="dora" Click="goToWebsite" HorizontalAlignment="Left" Margin="417,157,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
                 <Image Source="images/thumbnails/dora.png" Stretch ="Fill" Width="484"/>
-                <Button.Effect><DropShadowEffect BlurRadius="13" ShadowDepth="2" /></Button.Effect>
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\musicbox.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
             <Button x:Name="turtles" Click="goToWebsite" HorizontalAlignment="Left" Margin="417,579,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
@@ -64,6 +102,15 @@
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
                 </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\musicbox.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
             <Button x:Name="trees" Click="goToWebsite" HorizontalAlignment="Left" Margin="1020,157,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
@@ -71,6 +118,15 @@
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
                 </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\musicbox.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
         </Grid>
