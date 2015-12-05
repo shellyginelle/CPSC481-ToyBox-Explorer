@@ -134,10 +134,11 @@
     <Resource Include="images\heartPlus.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\thumbnails\scrollable.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\thumbnails\hello.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\website\sesame_street.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

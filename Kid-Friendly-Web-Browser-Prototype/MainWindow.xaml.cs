@@ -31,7 +31,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
             Browser browserWindow = new Browser();
             browserWindow.Show();
-            this.Close();
+            Close();
         }
 
         private void progressBarChange(object sender, EventArgs e)

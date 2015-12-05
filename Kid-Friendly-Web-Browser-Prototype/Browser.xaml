@@ -12,6 +12,8 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
 
+            <Image x:Name="sesame_street_img" Source ="images/website/sesame_street.png" Stretch ="Fill" Margin="0,195,0,-1623" Height="2628" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1782"/>
+
             <ProgressBar  HorizontalAlignment="Left" Width="1920" Value="65" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
             <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,65,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
@@ -24,22 +26,17 @@
             </Button>
 
 
-            <Button x:Name="homeButton"  Click="ButtonClicked" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="homeButton"  Click="homeButtonClick" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
 
-            <Button x:Name="up"  HorizontalAlignment="Left" Margin="1782,195,0,0" VerticalAlignment="Top" Width="138" Height="501"  Background="Transparent">
+            <Button x:Name="upScroll" Click="upScrollClick" HorizontalAlignment="Left" Margin="1782,195,0,0" VerticalAlignment="Top" Width="138" Height="501"  Background="Transparent">
                 <Image Source="images/arrowUp.png" Stretch ="Uniform" Height="134" Width="132"/>
             </Button>
 
-            <Button x:Name="down" HorizontalAlignment="Left" Margin="1782,696,0,0" VerticalAlignment="Top" Width="138" Height="504"  Background="Transparent">
+            <Button x:Name="downScroll" Click="downScrollClick" HorizontalAlignment="Left" Margin="1782,696,0,0" VerticalAlignment="Top" Width="138" Height="504"  Background="Transparent">
                 <Image Source="images/arrowDown.png" Stretch ="Uniform" Height="134" Width="132"/>
             </Button>
-            <Image x:Name="image" Source ="images/thumbnails/scrollable.png" Stretch ="Fill" HorizontalAlignment="Left" Height="1005" Margin="0,195,0,0" VerticalAlignment="Top" Width="1782"/>
-
-
-
-
 
         </Grid>
     </Viewbox>
