@@ -9,10 +9,38 @@
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         ContentRendered="progressBarChange">
+    <Window.Resources>
+        <Storyboard x:Key="LoadingScreen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="SplashScreen">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="SplashScreen">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.1" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="MainWindowCover">
+                <DiscreteObjectKeyFrame KeyTime="0:0:4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="MainWindowCover">
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource LoadingScreen}"/>
+        </EventTrigger>
+    </Window.Triggers>
 
-    <Viewbox StretchDirection="Both" Stretch="Uniform">
+    <Viewbox StretchDirection="Both" Stretch="Uniform" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition">
         <Grid Height="1200" Width="1920">
-            <ProgressBar Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
+            <ProgressBar x:Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
 
             <Button x:Name="games" Click="games_Click" Margin="417,984,1311,36"  Background="Transparent" >
                 <Image Source="images/controller.png" Stretch ="Uniform" Height="153" Width="157"/>
@@ -47,10 +75,18 @@
             </Button>
 
 
-            <DockPanel Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
+            <DockPanel x:Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
+            <Grid x:Name="MainWindowCover" Height="1200" Width="1920" Background="White"/>
+            <Grid x:Name="SplashScreen" Height="1200" Width="1920" Grid.Row="2">
+                <Grid.Background>
+                    <ImageBrush ImageSource="loadingScreenOfficial.png"/>
+                </Grid.Background>
+            </Grid>
 
             <!--<local:CategoryGrid2 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120" Loaded="CategoryGrid2_Loaded"/>
 -->
+
+
         </Grid>
     </Viewbox>
 
