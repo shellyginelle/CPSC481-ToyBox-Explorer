@@ -16,11 +16,11 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
 
-            <Button x:Name="reset" Click="resetBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="745,780,0,0" VerticalAlignment="Top" Width="160">
+            <Button x:Name="reset" Click="resetBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="745,900,0,0" VerticalAlignment="Top" Width="160">
                 <Image Source="images/newLayout/reset.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="button" Click="exitBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="1002,780,0,0" VerticalAlignment="Top" Width="160">
+            <Button x:Name="button" Click="exitBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="1002,900,0,0" VerticalAlignment="Top" Width="160">
                 <Image Source="images/newLayout/exitbrowser.png" Stretch ="Uniform"/>
             </Button>
 

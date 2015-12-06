@@ -149,7 +149,6 @@
     <Resource Include="images\newLayout\gamesIcon.png" />
     <Resource Include="images\newLayout\learnsIcon.png" />
     <Resource Include="images\newLayout\reset.png" />
-    <Resource Include="images\newLayout\timeOut.png" />
     <Resource Include="images\newLayout\videosIcon.png" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\newLayout\bgToyboxs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\newLayout\timeOut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
