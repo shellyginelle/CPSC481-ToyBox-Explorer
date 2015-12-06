@@ -6,9 +6,13 @@
         xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
         mc:Ignorable="d"
         Title="Toybox Explorer" Height="1200" Width="1920"
-        WindowStyle="None" ResizeMode="NoResize" Background="#eafbfc"
+        WindowStyle="None" ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         ContentRendered="progressBarChange">
+
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\bgToyboxs.png"/>
+    </Window.Background>
 
     <Window.Resources>
         <Image x:Key="Dora" Source="images/thumbnails/dora.PNG" Stretch="Fill" Width="484" />
