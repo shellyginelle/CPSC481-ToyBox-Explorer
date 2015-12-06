@@ -9,6 +9,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
     /// </summary>
     public partial class MainWindow : Window
     {
+        OnWebsite websiteControl = new OnWebsite();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -16,7 +18,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void goToWebsite(object sender, RoutedEventArgs e)
         {
-
             Browser browserWindow = new Browser();
             browserWindow.Show();
             Close();
