@@ -10,6 +10,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
     public partial class MainWindow : Window
     {
         OnWebsite websiteControl = new OnWebsite();
+        Boolean addedToFaves = false;
 
         public MainWindow()
         {
@@ -83,6 +84,11 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void games_Click(object sender, RoutedEventArgs e)
         {
+            TopLeft.Visibility = Visibility.Visible;
+            TopRight.Visibility = Visibility.Visible;
+            BotLeft.Visibility = Visibility.Visible;
+            BotRight.Visibility = Visibility.Visible;
+
             TopLeft.Content = FindResource("Trees");
             TopRight.Content = FindResource("Dora");
             BotLeft.Content = FindResource("Sesame");
@@ -91,6 +97,11 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void videos_Click(object sender, RoutedEventArgs e)
         {
+            TopLeft.Visibility = Visibility.Visible;
+            TopRight.Visibility = Visibility.Visible;
+            BotLeft.Visibility = Visibility.Visible;
+            BotRight.Visibility = Visibility.Visible;
+
             TopLeft.Content = FindResource("Sesame");
             TopRight.Content = FindResource("Turtles");
             BotLeft.Content = FindResource("Trees");
@@ -99,11 +110,37 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void learn_Click(object sender, RoutedEventArgs e)
         {
+            TopLeft.Visibility = Visibility.Visible;
+            TopRight.Visibility = Visibility.Visible;
+            BotLeft.Visibility = Visibility.Visible;
+            BotRight.Visibility = Visibility.Visible;
+
             TopLeft.Content = FindResource("Turtles");
             TopRight.Content = FindResource("Sesame");
             BotLeft.Content = FindResource("Dora");
             BotRight.Content = FindResource("Trees");
         }
 
+        private void faves_Click(object sender, RoutedEventArgs e)
+        {
+            if (addedToFaves)
+            {
+                TopLeft.Content = FindResource("Sesame");
+                TopRight.Visibility = Visibility.Hidden;
+                BotLeft.Visibility = Visibility.Hidden;
+                BotRight.Visibility = Visibility.Hidden;
+            } else
+            {
+                TopLeft.Visibility = Visibility.Hidden;
+                TopRight.Visibility = Visibility.Hidden;
+                BotLeft.Visibility = Visibility.Hidden;
+                BotRight.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void addFave_Click(object sender, RoutedEventArgs e)
+        {
+            addedToFaves = true;
+        }
     }
 }

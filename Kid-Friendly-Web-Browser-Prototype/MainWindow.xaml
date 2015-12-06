@@ -23,11 +23,11 @@
             <StackPanel Name="mainPanel" HorizontalAlignment="Left" Height="1135" Margin="0,60,0,0" VerticalAlignment="Top" Width="1920"/>
             <DockPanel Name="gridPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
 
-            <Button x:Name="homeButton"  Click="goHome" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="homeButton" Click="goHome" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
-            
-            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="525,77,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
+
+            <Button x:Name="favourite" Click="addFave_Click" HorizontalAlignment="Left" Margin="525,77,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="C:\Users\shellyg\Desktop\KFWB-Toybox\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\addFave.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
 
@@ -40,7 +40,7 @@
             <Button x:Name="learn" Click="learn_Click" Margin="1010,953,720,0" Background="Transparent" Width="200" Height="220">
                 <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\learnsIcon.png"/>
             </Button>
-            <Button x:Name="fave" Margin="1300,945,370,0"  Background="Transparent" Width="250" Height="250">
+            <Button x:Name="fave" Click="faves_Click" Margin="1300,945,370,0"  Background="Transparent" Width="250" Height="250">
                 <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\favesIcon.png"/>
             </Button>
 
