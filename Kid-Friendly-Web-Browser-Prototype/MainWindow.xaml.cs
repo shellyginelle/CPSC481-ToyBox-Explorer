@@ -105,6 +105,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             else if (page == 2)
             {
                 leftArrow.Visibility = Visibility.Visible;
+                rightArrow.Visibility = Visibility.Visible;
             }
             else if (page == 3)
             {
@@ -151,6 +152,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             else if (page == 2)
             {
                 leftArrow.Visibility = Visibility.Visible;
+                rightArrow.Visibility = Visibility.Visible;
             }
             else if (page == 3)
             {
