@@ -19,8 +19,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void homeButtonClick(object sender, RoutedEventArgs e)
         {
-            MainWindow browserWindow = new MainWindow();
-            browserWindow.Show();
             Hide();
         }
 
