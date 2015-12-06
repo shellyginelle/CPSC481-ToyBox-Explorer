@@ -91,6 +91,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void games_Click(object sender, RoutedEventArgs e)
         {
             page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Visible;
             gamesGrid = true;
             TopLeft.Visibility = Visibility.Visible;
             TopRight.Visibility = Visibility.Visible;
@@ -106,6 +108,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void videos_Click(object sender, RoutedEventArgs e)
         {
             page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Visible;
             videosGrid = true;
             TopLeft.Visibility = Visibility.Visible;
             TopRight.Visibility = Visibility.Visible;
@@ -121,6 +125,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void learn_Click(object sender, RoutedEventArgs e)
         {
             page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Visible;
             learnGrid = true;
             TopLeft.Visibility = Visibility.Visible;
             TopRight.Visibility = Visibility.Visible;
