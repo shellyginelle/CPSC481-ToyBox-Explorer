@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="Kid_Friendly_Web_Browser_Prototype.OnWebsite"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
+             mc:Ignorable="d" 
+                d:DesignHeight="1135" d:DesignWidth="1920" Background="#eafbfc">
+
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Height="1135" Width="1920">
+
+            <Image x:Name="sesame_street_img" Source ="images/website/sesame_street.png" Stretch ="Fill" Margin="0,130,0,-1623" Height="2628" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1782"/>
+
+            <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top"/>
+
+            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="525,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="C:\Users\shellyg\Desktop\KFWB-Toybox\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\addFave.png" Stretch ="Uniform" Height="105" Width="102"/>
+            </Button>
+
+            <Button x:Name="backButton"  HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="images/back.png" Stretch ="Uniform" Height="95" Width="102"/>
+            </Button>
+
+            <Button x:Name="upScroll" Click="upScrollClick" HorizontalAlignment="Left" Margin="1782,130,0,0" VerticalAlignment="Top" Width="138" Height="501"  Background="Transparent">
+                <Image Source="images/arrowUp.png" Stretch ="Uniform" Height="134" Width="132"/>
+            </Button>
+
+            <Button x:Name="downScroll" Click="downScrollClick" HorizontalAlignment="Left" Margin="1782,630,0,0" VerticalAlignment="Top" Width="138" Height="504"  Background="Transparent">
+                <Image Source="images/arrowDown.png" Stretch ="Uniform" Height="134" Width="132"/>
+            </Button>
+
+        </Grid>
+    </Viewbox>
+    
+</UserControl>

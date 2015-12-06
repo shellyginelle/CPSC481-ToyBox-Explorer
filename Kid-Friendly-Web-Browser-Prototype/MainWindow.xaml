@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
         mc:Ignorable="d"
         Title="Toybox Explorer" Height="1200" Width="1920"
-        WindowStyle="None" ResizeMode="NoResize"  
+        WindowStyle="None" ResizeMode="NoResize" Background="#eafbfc"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         ContentRendered="progressBarChange">
 
@@ -14,20 +14,17 @@
         <Grid Height="1200" Width="1920">
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
 
-            <Button x:Name="games" Margin="417,984,1311,36"  Background="Transparent" >
-                <Image Source="images/controller.png" Stretch ="Uniform" Height="153" Width="157"/>
+            <Button x:Name="games" Margin="417,977,1295,0"  Background="Transparent" Width="200" Height="200">
+                <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\gamesIcon.png"/>
             </Button>
-
-            <Button x:Name="video" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent"  BorderThickness="0"   >
-                <Image Source="images/video.png" Stretch ="Uniform" Height="156" Width="160"/>
+            <Button x:Name="video" HorizontalAlignment="Left" Margin="710,976,0,0" Background="Transparent" Width="200" Height="200">
+                <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\videosIcon.png"/>
             </Button>
-
-            <Button x:Name="button2" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
-                <Image Source="images/book.png" Stretch ="Uniform" Height="158" Width="162"/>
+            <Button x:Name="learn" Margin="1010,953,720,0" Background="Transparent" Width="200" Height="220">
+                <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\learnsIcon.png"/>
             </Button>
-
-            <Button x:Name="button3" Margin="1324,984,416,36"  Background="Transparent"  BorderThickness="0"  >
-                <Image Source="images/heart.png" Stretch ="Uniform" Height="156" Width="142"/>
+            <Button x:Name="fave" Margin="1300,945,370,0"  Background="Transparent" Width="250" Height="250">
+                <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\favesIcon.png"/>
             </Button>
 
             <Button x:Name="buttonRight" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >

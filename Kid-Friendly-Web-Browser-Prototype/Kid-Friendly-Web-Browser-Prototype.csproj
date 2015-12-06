@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TimeOut.xaml.cs">
+      <DependentUpon>TimeOut.xaml</DependentUpon>
+    </Compile>
     <Page Include="Browser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,8 +79,26 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="OnHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnWebsite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TimeOut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OnHome.xaml.cs">
+      <DependentUpon>OnHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OnWebsite.xaml.cs">
+      <DependentUpon>OnWebsite.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -136,7 +157,16 @@
   <ItemGroup>
     <Resource Include="images\thumbnails\hello.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\newLayout\addFave.png" />
+    <Resource Include="images\newLayout\exitbrowser.png" />
+    <Resource Include="images\newLayout\favesIcon.png" />
+    <Resource Include="images\newLayout\gamesIcon.png" />
+    <Resource Include="images\newLayout\learnsIcon.png" />
+    <Resource Include="images\newLayout\reset.png" />
+    <Resource Include="images\newLayout\timeOut.png" />
+    <Resource Include="images\newLayout\videosIcon.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="images\website\sesame_street.png" />
   </ItemGroup>
