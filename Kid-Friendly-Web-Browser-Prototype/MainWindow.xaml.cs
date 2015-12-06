@@ -24,10 +24,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
         public MainWindow()
         {
             InitializeComponent();
-            CategoryGrid1 catGrid1 = new CategoryGrid1();
-            CategoryGrid2 catGrid2 = new CategoryGrid2();
-            CategoryGrid3 catGrid3 = new CategoryGrid3();
-
         }
 
         private void goToWebsite(object sender, RoutedEventArgs e)
@@ -64,6 +60,19 @@ namespace Kid_Friendly_Web_Browser_Prototype
         {
             CategoryGridDockPanel.Children.Clear();
             CategoryGridDockPanel.Children.Add(new CategoryGrid3());
+        }
+
+        private void arrowRight_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryGrid1 catGrid1 = new CategoryGrid1();
+            CategoryGrid2 catGrid2 = new CategoryGrid2();
+            CategoryGrid3 catGrid3 = new CategoryGrid3();
+
+            if (CategoryGridDockPanel.Children.Equals(catGrid1))
+            {
+                CategoryGridDockPanel.Children.Clear();
+                CategoryGridDockPanel.Children.Add(new CategoryGrid2());
+            }
         }
     }
 }

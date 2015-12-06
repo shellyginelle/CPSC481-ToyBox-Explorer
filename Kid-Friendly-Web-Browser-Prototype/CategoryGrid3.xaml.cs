@@ -27,7 +27,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void goToWebsite(object sender, RoutedEventArgs e)
         {
-
         }
     }
 }
