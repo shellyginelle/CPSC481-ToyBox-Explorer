@@ -64,6 +64,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CategoryGrid2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CategoryGrid3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,6 +86,12 @@
     </Compile>
     <Compile Include="CategoryGrid1.xaml.cs">
       <DependentUpon>CategoryGrid1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryGrid2.xaml.cs">
+      <DependentUpon>CategoryGrid2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryGrid3.xaml.cs">
+      <DependentUpon>CategoryGrid3.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

@@ -72,9 +72,10 @@
                     <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
                 </Button.Effect>
             </Button>
-            
-            <local:CategoryGrid1 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120"/>
+            <DockPanel Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
 
+            <!--<local:CategoryGrid2 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120" Loaded="CategoryGrid2_Loaded"/>
+-->
         </Grid>
     </Viewbox>
 

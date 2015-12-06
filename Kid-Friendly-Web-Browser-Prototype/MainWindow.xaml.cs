@@ -24,6 +24,10 @@ namespace Kid_Friendly_Web_Browser_Prototype
         public MainWindow()
         {
             InitializeComponent();
+            CategoryGrid1 catGrid1 = new CategoryGrid1();
+            CategoryGrid2 catGrid2 = new CategoryGrid2();
+            CategoryGrid3 catGrid3 = new CategoryGrid3();
+
         }
 
         private void goToWebsite(object sender, RoutedEventArgs e)
@@ -46,15 +50,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void games_Click(object sender, RoutedEventArgs e)
         {
-            CategoryGrid1 catGrid = new CategoryGrid1();
-            Window window = new Window
-            {
-                Title = "My User Control Dialog",
-                Content = new CategoryGrid1()
-            };
-
-            window.ShowDialog();
-
+            CategoryGridDockPanel.Children.Clear();
+            CategoryGridDockPanel.Children.Add(new CategoryGrid1());
         }
     }
 }
