@@ -24,5 +24,10 @@ namespace Kid_Friendly_Web_Browser_Prototype
         {
             InitializeComponent();
         }
+
+        private void goToWebsite(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
