@@ -186,5 +186,11 @@ namespace Kid_Friendly_Web_Browser_Prototype
                 catGrid3 = true;
             }
         }
+
+        private void heart_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryGridDockPanel.Children.Clear();
+            CategoryGridDockPanel.Children.Add(new FavoritesUC());
+        }
     }
 }

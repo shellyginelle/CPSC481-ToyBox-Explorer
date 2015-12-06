@@ -28,7 +28,7 @@
                 <Image Source="images/book.png" Stretch ="Uniform" Height="158" Width="162"/>
             </Button>
 
-            <Button x:Name="button3" Margin="1324,984,416,36"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="heart" Click="heart_Click" Margin="1324,984,416,36"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/heart.png" Stretch ="Uniform" Height="156" Width="142"/>
             </Button>
 

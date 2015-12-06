@@ -72,6 +72,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FavoritesUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,6 +96,9 @@
     </Compile>
     <Compile Include="CategoryGrid3.xaml.cs">
       <DependentUpon>CategoryGrid3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FavoritesUC.xaml.cs">
+      <DependentUpon>FavoritesUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
