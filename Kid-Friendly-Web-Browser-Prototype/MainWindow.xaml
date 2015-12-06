@@ -14,15 +14,15 @@
         <Grid Height="1200" Width="1920">
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
 
-            <Button x:Name="games" Margin="417,984,1311,36"  Background="Transparent" >
+            <Button x:Name="games" Click="games_Click" Margin="417,984,1311,36"  Background="Transparent" >
                 <Image Source="images/controller.png" Stretch ="Uniform" Height="153" Width="157"/>
             </Button>
 
-            <Button x:Name="video" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent"  BorderThickness="0"   >
+            <Button x:Name="video" Click="videos_Click" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent"  BorderThickness="0"   >
                 <Image Source="images/video.png" Stretch ="Uniform" Height="156" Width="160"/>
             </Button>
 
-            <Button x:Name="button2" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="learn" Click="learn_Click" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/book.png" Stretch ="Uniform" Height="158" Width="162"/>
             </Button>
 
@@ -30,11 +30,11 @@
                 <Image Source="images/heart.png" Stretch ="Uniform" Height="156" Width="142"/>
             </Button>
 
-            <Button x:Name="buttonRight" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="buttonRight" Click="arrowRight_Click" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="buttonLeft" Click="arrowLeft_Click" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
             </Button>
 
@@ -72,7 +72,10 @@
                     <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
                 </Button.Effect>
             </Button>
+            <DockPanel Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
 
+            <!--<local:CategoryGrid2 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120" Loaded="CategoryGrid2_Loaded"/>
+-->
         </Grid>
     </Viewbox>
 
