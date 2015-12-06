@@ -53,5 +53,17 @@ namespace Kid_Friendly_Web_Browser_Prototype
             CategoryGridDockPanel.Children.Clear();
             CategoryGridDockPanel.Children.Add(new CategoryGrid1());
         }
+
+        private void videos_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryGridDockPanel.Children.Clear();
+            CategoryGridDockPanel.Children.Add(new CategoryGrid2());
+        }
+
+        private void learn_Click(object sender, RoutedEventArgs e)
+        {
+            CategoryGridDockPanel.Children.Clear();
+            CategoryGridDockPanel.Children.Add(new CategoryGrid3());
+        }
     }
 }
