@@ -8,11 +8,13 @@
         Title="Toybox Explorer" Height="1200" Width="1920"
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
-        ContentRendered="progressBarChange">
+        ContentRendered="progressBarChange"
+         >
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
-            <ProgressBar Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
+                
+             <ProgressBar Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="Gray" Background="white" Foreground="#4255bd" Margin="0,0,0,1135"/>
 
             <Button x:Name="games" Click="games_Click" Margin="417,984,1311,36"  Background="Transparent" >
                 <Image Source="images/controller.png" Stretch ="Uniform" Height="153" Width="157"/>

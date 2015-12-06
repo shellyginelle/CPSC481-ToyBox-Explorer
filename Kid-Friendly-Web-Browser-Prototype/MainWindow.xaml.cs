@@ -12,7 +12,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private bool catGrid1;
         private bool catGrid2;
         private bool catGrid3;
-
         private int page;
 
         public MainWindow()
@@ -25,7 +24,26 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid3 = false;
             page = 1;
             leftArrow.Visibility = Visibility.Hidden;
+
+            CategoryGrid1.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
+            CategoryGrid2.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
+            CategoryGrid3.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
+
+
         }
+
+        private void goToWebsite(object sender, object EventArgs ) 
+        {
+            // add code for browser user control
+        }
+
+
+        private void favourite(object sender, object EventArgs)
+        {
+            // add code for favourites 
+        }
+
+
 
         private void progressBarChange(object sender, EventArgs e)
         {
@@ -36,6 +54,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
                 Thread.Sleep(200);
             }
         }
+
+    
 
         private void games_Click(object sender, RoutedEventArgs e)
         {
@@ -60,6 +80,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid2 = true;
             catGrid3 = false;
         }
+
+
 
         private void learn_Click(object sender, RoutedEventArgs e)
         {

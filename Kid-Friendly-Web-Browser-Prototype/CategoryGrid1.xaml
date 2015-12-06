@@ -18,7 +18,7 @@
     <Grid>
         <Label x:Name="UserControlNumber" Content="1" FontSize="200" HorizontalAlignment="Left" Margin="490,220,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="TopLeft" Click="goToWebsite" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+        <Button x:Name="TopLeft" Click="website_Click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/dora.png" Stretch ="Fill" Width="484"/> -->
             <DynamicResource ResourceKey="Dora" />
                 <Button.Effect>
@@ -26,7 +26,7 @@
             </Button.Effect>
         </Button>
         
-        <Button x:Name="TopRight" Click="goToWebsite" HorizontalAlignment="Left" Margin="600,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+        <Button x:Name="TopRight" Click="website_Click" HorizontalAlignment="Left" Margin="600,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/trees.png" Stretch ="Fill" Width="484"/>-->
             <DynamicResource ResourceKey="Trees" />
             <Button.Effect>
@@ -34,7 +34,7 @@
             </Button.Effect>
         </Button>
 
-        <Button x:Name="BotLeft" Click="goToWebsite" HorizontalAlignment="Left" Margin="0,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+        <Button x:Name="BotLeft" Click="website_Click" HorizontalAlignment="Left" Margin="0,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/turtles.png" Stretch ="Fill" Width="484"/>-->
             <DynamicResource ResourceKey="Turtles" />
             <Button.Effect>
@@ -42,7 +42,7 @@
             </Button.Effect>
         </Button>
 
-        <Button x:Name="BotRight" Click="goToWebsite" HorizontalAlignment="Left" Margin="600,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
+        <Button x:Name="BotRight" Click="website_Click" HorizontalAlignment="Left" Margin="600,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/sesame.png" Stretch ="Fill" Width="484"/>-->
             <DynamicResource ResourceKey="Sesame" />
             <Button.Effect>
