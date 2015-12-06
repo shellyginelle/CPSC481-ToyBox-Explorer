@@ -23,6 +23,14 @@
             <StackPanel Name="mainPanel" HorizontalAlignment="Left" Height="1135" Margin="0,60,0,0" VerticalAlignment="Top" Width="1920"/>
             <DockPanel Name="gridPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
 
+            <Button x:Name="homeButton"  Click="goHome" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
+            </Button>
+            
+            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="525,77,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
+                <Image Source="C:\Users\shellyg\Desktop\KFWB-Toybox\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\addFave.png" Stretch ="Uniform" Height="105" Width="102"/>
+            </Button>
+
             <Button x:Name="games" Click="games_Click" Margin="417,977,1295,0"  Background="Transparent" Width="200" Height="200">
                 <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\gamesIcon.png"/>
             </Button>
@@ -50,10 +58,6 @@
 
             <Button x:Name="settings" HorizontalAlignment="Left" Margin="1763,1071,0,0" VerticalAlignment="Top" Width="72" Height="71 "  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/settings.png" Stretch ="Uniform"/>
-            </Button>
-
-            <Button x:Name="homeButton"  Click="goHome" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
-                <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
 
             <Button x:Name="BotRight" Click="goToWebsite" HorizontalAlignment="Left" Margin="1017,579,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">

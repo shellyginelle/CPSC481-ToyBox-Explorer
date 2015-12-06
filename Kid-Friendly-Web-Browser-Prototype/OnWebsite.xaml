@@ -14,10 +14,6 @@
 
             <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
-            <Button x:Name="favourite"  HorizontalAlignment="Left" Margin="525,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
-                <Image Source="C:\Users\shellyg\Desktop\KFWB-Toybox\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\addFave.png" Stretch ="Uniform" Height="105" Width="102"/>
-            </Button>
-
             <Button x:Name="backButton"  HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/back.png" Stretch ="Uniform" Height="95" Width="102"/>
             </Button>

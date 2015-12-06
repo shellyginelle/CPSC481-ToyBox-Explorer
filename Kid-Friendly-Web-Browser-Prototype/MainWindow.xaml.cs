@@ -15,6 +15,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
         {
             InitializeComponent();
             homeButton.Visibility = Visibility.Hidden;
+            favourite.Visibility = Visibility.Hidden;
         }
 
         private void goToWebsite(object sender, RoutedEventArgs e)
@@ -36,6 +37,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             settings.Visibility = Visibility.Hidden;
 
             homeButton.Visibility = Visibility.Visible;
+            favourite.Visibility = Visibility.Visible;
 
             mainPanel.Children.Clear();
             mainPanel.Children.Add(websiteControl);
@@ -60,6 +62,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             settings.Visibility = Visibility.Visible;
 
             homeButton.Visibility = Visibility.Hidden;
+            favourite.Visibility = Visibility.Hidden;
 
             mainPanel.Children.Clear();
         }
@@ -84,8 +87,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
             TopRight.Content = FindResource("Dora");
             BotLeft.Content = FindResource("Sesame");
             BotRight.Content = FindResource("Turtles");
-            //gridPanel.Children.Clear();
-            //gridPanel.Children.Add(new CategoryGrid1());
         }
 
         private void videos_Click(object sender, RoutedEventArgs e)
@@ -94,8 +95,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
             TopRight.Content = FindResource("Turtles");
             BotLeft.Content = FindResource("Trees");
             BotRight.Content = FindResource("Dora");
-            //gridPanel.Children.Clear();
-            //gridPanel.Children.Add(new CategoryGrid2());
         }
 
         private void learn_Click(object sender, RoutedEventArgs e)
@@ -104,8 +103,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
             TopRight.Content = FindResource("Sesame");
             BotLeft.Content = FindResource("Dora");
             BotRight.Content = FindResource("Trees");
-            //gridPanel.Children.Clear();
-            //gridPanel.Children.Add(new CategoryGrid3());
         }
 
     }
