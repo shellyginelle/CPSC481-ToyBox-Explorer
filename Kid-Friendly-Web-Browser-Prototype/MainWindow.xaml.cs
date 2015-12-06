@@ -19,10 +19,10 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void goToWebsite(object sender, RoutedEventArgs e)
         {
-            sesame.Visibility = Visibility.Hidden;
-            dora.Visibility = Visibility.Hidden;
-            turtles.Visibility = Visibility.Hidden;
-            trees.Visibility = Visibility.Hidden;
+            TopLeft.Visibility = Visibility.Hidden;
+            TopRight.Visibility = Visibility.Hidden;
+            BotLeft.Visibility = Visibility.Hidden;
+            BotRight.Visibility = Visibility.Hidden;
 
             games.Visibility = Visibility.Hidden;
             video.Visibility = Visibility.Hidden;
@@ -43,10 +43,10 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void goHome(object sender, RoutedEventArgs e)
         {
-            sesame.Visibility = Visibility.Visible;
-            dora.Visibility = Visibility.Visible;
-            turtles.Visibility = Visibility.Visible;
-            trees.Visibility = Visibility.Visible;
+            TopLeft.Visibility = Visibility.Visible;
+            TopRight.Visibility = Visibility.Visible;
+            BotLeft.Visibility = Visibility.Visible;
+            BotRight.Visibility = Visibility.Visible;
 
             games.Visibility = Visibility.Visible;
             video.Visibility = Visibility.Visible;
@@ -76,6 +76,36 @@ namespace Kid_Friendly_Web_Browser_Prototype
             TimeOut popup = new TimeOut(); //Create new window to the exit page 
             popup.Show();
             Close();
+        }
+
+        private void games_Click(object sender, RoutedEventArgs e)
+        {
+            TopLeft.Content = FindResource("Trees");
+            TopRight.Content = FindResource("Dora");
+            BotLeft.Content = FindResource("Sesame");
+            BotRight.Content = FindResource("Turtles");
+            //gridPanel.Children.Clear();
+            //gridPanel.Children.Add(new CategoryGrid1());
+        }
+
+        private void videos_Click(object sender, RoutedEventArgs e)
+        {
+            TopLeft.Content = FindResource("Sesame");
+            TopRight.Content = FindResource("Turtles");
+            BotLeft.Content = FindResource("Trees");
+            BotRight.Content = FindResource("Dora");
+            //gridPanel.Children.Clear();
+            //gridPanel.Children.Add(new CategoryGrid2());
+        }
+
+        private void learn_Click(object sender, RoutedEventArgs e)
+        {
+            TopLeft.Content = FindResource("Turtles");
+            TopRight.Content = FindResource("Sesame");
+            BotLeft.Content = FindResource("Dora");
+            BotRight.Content = FindResource("Trees");
+            //gridPanel.Children.Clear();
+            //gridPanel.Children.Add(new CategoryGrid3());
         }
 
     }
