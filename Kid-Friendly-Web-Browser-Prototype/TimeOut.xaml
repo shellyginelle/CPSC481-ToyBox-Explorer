@@ -10,18 +10,18 @@
         Height="1200" Width="1920">
 
     <Window.Background>
-        <ImageBrush ImageSource="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\timeOut.png"></ImageBrush>
+        <ImageBrush ImageSource="images/newLayout/timeOut.png"></ImageBrush>
     </Window.Background>
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
 
             <Button x:Name="reset" Click="resetBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="745,780,0,0" VerticalAlignment="Top" Width="160">
-                <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\reset.png" Stretch ="Uniform"/>
+                <Image Source="images/newLayout/reset.png" Stretch ="Uniform"/>
             </Button>
 
             <Button x:Name="button" Click="exitBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="1002,780,0,0" VerticalAlignment="Top" Width="160">
-                <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\exitbrowser.png" Stretch ="Uniform"/>
+                <Image Source="images/newLayout/exitbrowser.png" Stretch ="Uniform"/>
             </Button>
 
         </Grid>
