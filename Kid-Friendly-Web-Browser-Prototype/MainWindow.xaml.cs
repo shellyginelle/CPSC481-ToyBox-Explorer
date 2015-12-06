@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Kid_Friendly_Web_Browser_Prototype
 {
@@ -21,20 +9,22 @@ namespace Kid_Friendly_Web_Browser_Prototype
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool catGrid1 = false;
-        private bool catGrid2 = false;
-        private bool catGrid3 = false;
+        private bool catGrid1;
+        private bool catGrid2;
+        private bool catGrid3;
+
+        private int page;
 
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void goToWebsite(object sender, RoutedEventArgs e)
-        {
-            Browser browserWindow = new Browser();
-            browserWindow.Show();
-            Close();
+            CategoryGridDockPanel.Children.Clear();
+            CategoryGridDockPanel.Children.Add(new CategoryGrid1());
+            catGrid1 = true;
+            catGrid2 = false;
+            catGrid3 = false;
+            page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
         }
 
         private void progressBarChange(object sender, EventArgs e)
@@ -49,6 +39,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void games_Click(object sender, RoutedEventArgs e)
         {
+            page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Visible;
             CategoryGridDockPanel.Children.Clear();
             CategoryGridDockPanel.Children.Add(new CategoryGrid1());
             catGrid1 = true;
@@ -58,6 +51,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void videos_Click(object sender, RoutedEventArgs e)
         {
+            page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Visible;
             CategoryGridDockPanel.Children.Clear();
             CategoryGridDockPanel.Children.Add(new CategoryGrid2());
             catGrid1 = false;
@@ -67,6 +63,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void learn_Click(object sender, RoutedEventArgs e)
         {
+            page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Visible;
             CategoryGridDockPanel.Children.Clear();
             CategoryGridDockPanel.Children.Add(new CategoryGrid3());
             catGrid1 = false;
@@ -74,8 +73,22 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid3 = true;
         }
 
-        private void arrowRight_Click(object sender, RoutedEventArgs e)
+        private void rightArrow_Click(object sender, RoutedEventArgs e)
         {
+            page++;
+            if (page == 1)
+            {
+                leftArrow.Visibility = Visibility.Hidden;
+            }
+            else if (page == 2)
+            {
+                leftArrow.Visibility = Visibility.Visible;
+            }
+            else if (page == 3)
+            {
+                rightArrow.Visibility = Visibility.Hidden;
+            }
+            
             if (catGrid1)
             {
                 CategoryGridDockPanel.Children.Clear();
@@ -104,8 +117,24 @@ namespace Kid_Friendly_Web_Browser_Prototype
             }
         }
 
-        private void arrowLeft_Click(object sender, RoutedEventArgs e)
+        private void leftArrow_Click(object sender, RoutedEventArgs e)
         {
+
+            page--;
+            if (page == 1)
+            {
+                leftArrow.Visibility = Visibility.Hidden;
+                rightArrow.Visibility = Visibility.Visible;
+            }
+            else if (page == 2)
+            {
+                leftArrow.Visibility = Visibility.Visible;
+            }
+            else if (page == 3)
+            {
+                rightArrow.Visibility = Visibility.Hidden;
+            }
+
             if (catGrid3)
             {
                 CategoryGridDockPanel.Children.Clear();
