@@ -10,13 +10,19 @@ namespace Kid_Friendly_Web_Browser_Prototype
     public partial class MainWindow : Window
     {
         OnWebsite websiteControl = new OnWebsite();
-        Boolean addedToFaves = false;
+        private Boolean addedToFaves = false;
+        private int page;
+        private bool gamesGrid = false;
+        private bool videosGrid = false;
+        private bool learnGrid = false;
 
         public MainWindow()
         {
             InitializeComponent();
+            page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
             homeButton.Visibility = Visibility.Hidden;
-            favourite.Visibility = Visibility.Hidden;
+            favourite.Visibility = Visibility.Hidden;           
         }
 
         private void goToWebsite(object sender, RoutedEventArgs e)
@@ -31,8 +37,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             learn.Visibility = Visibility.Hidden;
             fave.Visibility = Visibility.Hidden;
 
-            buttonRight.Visibility = Visibility.Hidden;
-            buttonLeft.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Hidden;
+            leftArrow.Visibility = Visibility.Hidden;
 
             search.Visibility = Visibility.Hidden;
             settings.Visibility = Visibility.Hidden;
@@ -56,8 +62,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             learn.Visibility = Visibility.Visible;
             fave.Visibility = Visibility.Visible;
 
-            buttonRight.Visibility = Visibility.Visible;
-            buttonLeft.Visibility = Visibility.Visible;
+            rightArrow.Visibility = Visibility.Visible;
+            leftArrow.Visibility = Visibility.Visible;
 
             search.Visibility = Visibility.Visible;
             settings.Visibility = Visibility.Visible;
@@ -84,6 +90,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void games_Click(object sender, RoutedEventArgs e)
         {
+            page = 1;
+            gamesGrid = true;
             TopLeft.Visibility = Visibility.Visible;
             TopRight.Visibility = Visibility.Visible;
             BotLeft.Visibility = Visibility.Visible;
@@ -97,6 +105,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void videos_Click(object sender, RoutedEventArgs e)
         {
+            page = 1;
+            videosGrid = true;
             TopLeft.Visibility = Visibility.Visible;
             TopRight.Visibility = Visibility.Visible;
             BotLeft.Visibility = Visibility.Visible;
@@ -110,6 +120,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void learn_Click(object sender, RoutedEventArgs e)
         {
+            page = 1;
+            learnGrid = true;
             TopLeft.Visibility = Visibility.Visible;
             TopRight.Visibility = Visibility.Visible;
             BotLeft.Visibility = Visibility.Visible;
@@ -123,6 +135,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void faves_Click(object sender, RoutedEventArgs e)
         {
+            rightArrow.Visibility = Visibility.Hidden;
+
             if (addedToFaves)
             {
                 TopLeft.Content = FindResource("Sesame");
@@ -141,6 +155,138 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void addFave_Click(object sender, RoutedEventArgs e)
         {
             addedToFaves = true;
+        }
+
+        private void rightArrow_Click(object sender, RoutedEventArgs e)
+        {
+            page++;
+            if (page == 1)
+            {
+                leftArrow.Visibility = Visibility.Hidden;
+            }
+            else if (page == 2)
+            {
+                leftArrow.Visibility = Visibility.Visible;
+            }
+            else if (page == 3)
+            {
+                rightArrow.Visibility = Visibility.Hidden;
+            }
+
+            if (gamesGrid)
+            {
+                gamesGrid = false;
+                videosGrid = true;
+                learnGrid = false;
+                TopLeft.Visibility = Visibility.Visible;
+                TopRight.Visibility = Visibility.Visible;
+                BotLeft.Visibility = Visibility.Visible;
+                BotRight.Visibility = Visibility.Visible;
+
+                TopLeft.Content = FindResource("Sesame");
+                TopRight.Content = FindResource("Turtles");
+                BotLeft.Content = FindResource("Trees");
+                BotRight.Content = FindResource("Dora");
+            }
+
+            else if (videosGrid)
+            {
+                gamesGrid = false;
+                videosGrid = false;
+                learnGrid = true;
+                TopLeft.Visibility = Visibility.Visible;
+                TopRight.Visibility = Visibility.Visible;
+                BotLeft.Visibility = Visibility.Visible;
+                BotRight.Visibility = Visibility.Visible;
+
+                TopLeft.Content = FindResource("Turtles");
+                TopRight.Content = FindResource("Sesame");
+                BotLeft.Content = FindResource("Dora");
+                BotRight.Content = FindResource("Trees");
+            }
+
+            else
+            {
+                gamesGrid = true;
+                videosGrid = false;
+                learnGrid = false;
+                TopLeft.Visibility = Visibility.Visible;
+                TopRight.Visibility = Visibility.Visible;
+                BotLeft.Visibility = Visibility.Visible;
+                BotRight.Visibility = Visibility.Visible;
+
+                TopLeft.Content = FindResource("Trees");
+                TopRight.Content = FindResource("Dora");
+                BotLeft.Content = FindResource("Sesame");
+                BotRight.Content = FindResource("Turtles");
+            }
+        }
+
+        private void leftArrow_Click(object sender, RoutedEventArgs e)
+        {
+            page--;
+            if (page == 1)
+            {
+                leftArrow.Visibility = Visibility.Hidden;
+                rightArrow.Visibility = Visibility.Visible;
+            }
+            else if (page == 2)
+            {
+                leftArrow.Visibility = Visibility.Visible;
+            }
+            else if (page == 3)
+            {
+                rightArrow.Visibility = Visibility.Hidden;
+            }
+
+            if (gamesGrid)
+            {
+                gamesGrid = false;
+                videosGrid = true;
+                learnGrid = false;
+                TopLeft.Visibility = Visibility.Visible;
+                TopRight.Visibility = Visibility.Visible;
+                BotLeft.Visibility = Visibility.Visible;
+                BotRight.Visibility = Visibility.Visible;
+
+                TopLeft.Content = FindResource("Trees");
+                TopRight.Content = FindResource("Dora");
+                BotLeft.Content = FindResource("Sesame");
+                BotRight.Content = FindResource("Turtles");
+
+            }
+
+            else if (videosGrid)
+            {
+                gamesGrid = true;
+                videosGrid = false;
+                learnGrid = false;
+                TopLeft.Visibility = Visibility.Visible;
+                TopRight.Visibility = Visibility.Visible;
+                BotLeft.Visibility = Visibility.Visible;
+                BotRight.Visibility = Visibility.Visible;
+
+                TopLeft.Content = FindResource("Turtles");
+                TopRight.Content = FindResource("Sesame");
+                BotLeft.Content = FindResource("Dora");
+                BotRight.Content = FindResource("Trees");
+            }
+
+            else
+            {
+                gamesGrid = false;
+                videosGrid = false;
+                learnGrid = true;
+                TopLeft.Visibility = Visibility.Visible;
+                TopRight.Visibility = Visibility.Visible;
+                BotLeft.Visibility = Visibility.Visible;
+                BotRight.Visibility = Visibility.Visible;
+
+                TopLeft.Content = FindResource("Sesame");
+                TopRight.Content = FindResource("Turtles");
+                BotLeft.Content = FindResource("Trees");
+                BotRight.Content = FindResource("Dora");
+            }
         }
     }
 }

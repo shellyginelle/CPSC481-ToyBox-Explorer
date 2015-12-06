@@ -21,8 +21,8 @@
         <Grid Height="1200" Width="1920">
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="1800" HorizontalAlignment="Left" Width="1920" BorderBrush="#9E9E9E" Background="#FFFFFF" Foreground="#4DD0E1" Margin="0,0,0,1135"/>
             <StackPanel Name="mainPanel" HorizontalAlignment="Left" Height="1135" Margin="0,60,0,0" VerticalAlignment="Top" Width="1920"/>
-            <DockPanel Name="gridPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
-
+            <DockPanel Name="gridPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" /> 
+            
             <Button x:Name="homeButton" Click="goHome" HorizontalAlignment="Left" Margin="295,77,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
             </Button>
@@ -44,11 +44,11 @@
                 <Image Source="C:\Users\shellyg\Desktop\Kid-Friendly-Web-Browser-Prototype\Kid-Friendly-Web-Browser-Prototype\images\newLayout\favesIcon.png"/>
             </Button>
 
-            <Button x:Name="buttonRight" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="rightArrow" Click="rightArrow_Click" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="buttonLeft" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="leftArrow" Click="leftArrow_Click" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
             </Button>
 
