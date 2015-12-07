@@ -1,0 +1,30 @@
+﻿<Window x:Class="Kid_Friendly_Web_Browser_Prototype.TimeOut"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
+        mc:Ignorable="d"
+        Title="TimeOut" WindowStyle="None" ResizeMode="NoResize"  
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Height="1200" Width="1920">
+
+    <Window.Background>
+        <ImageBrush ImageSource="images/newLayout/timeOut.png"></ImageBrush>
+    </Window.Background>
+
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Height="1200" Width="1920">
+
+            <Button x:Name="reset" Click="resetBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="745,900,0,0" VerticalAlignment="Top" Width="160">
+                <Image Source="images/newLayout/reset.png" Stretch ="Uniform"/>
+            </Button>
+
+            <Button x:Name="button" Click="exitBrowser" Background="Transparent" HorizontalAlignment="Left" Margin="1002,900,0,0" VerticalAlignment="Top" Width="160">
+                <Image Source="images/newLayout/exitbrowser.png" Stretch ="Uniform"/>
+            </Button>
+
+        </Grid>
+    </Viewbox>
+    
+</Window>

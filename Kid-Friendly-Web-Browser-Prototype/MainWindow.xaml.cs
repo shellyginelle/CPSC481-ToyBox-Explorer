@@ -12,6 +12,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private bool catGrid1;
         private bool catGrid2;
         private bool catGrid3;
+        OnWebsite websiteControl = new OnWebsite();
+        private Boolean addedToFaves = false;
         private int page;
 
         public MainWindow()
@@ -29,30 +31,45 @@ namespace Kid_Friendly_Web_Browser_Prototype
             CategoryGrid2.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
             CategoryGrid3.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
 
-
         }
 
         private void goToWebsite(object sender, object EventArgs ) 
         {
-            // add code for browser user control
+            CategoryGridDockPanel.Children.Clear();
+            games.Visibility = Visibility.Hidden;
+            video.Visibility = Visibility.Hidden;
+            learn.Visibility = Visibility.Hidden;
+            heart.Visibility = Visibility.Hidden;
+
+            rightArrow.Visibility = Visibility.Hidden;
+            leftArrow.Visibility = Visibility.Hidden;
+
+            search.Visibility = Visibility.Hidden;
+            settings.Visibility = Visibility.Hidden;
+
+            mainPanel.Children.Clear();
+            mainPanel.Children.Add(websiteControl);
         }
 
 
         private void favourite(object sender, object EventArgs)
         {
-            // add code for favourites 
+            addedToFaves = true;
         }
-
 
 
         private void progressBarChange(object sender, EventArgs e)
         {
-            // 1800 seconds = 30 minutes MAX TIME FOR WEB BROWSER 
-            for (int i = 0; i < 200; i++)
+            // 600 seconds = 10 minutes MAX TIME FOR WEB BROWSER 
+            for (int i = 0; i < 600; i++)
             {
                 pbStatus.Dispatcher.Invoke(() => pbStatus.Value = i, System.Windows.Threading.DispatcherPriority.Background);
-                Thread.Sleep(200);
+                Thread.Sleep(600);
             }
+
+            TimeOut popup = new TimeOut(); //Create new window to the exit page 
+            popup.Show();
+            Close();
         }
 
     

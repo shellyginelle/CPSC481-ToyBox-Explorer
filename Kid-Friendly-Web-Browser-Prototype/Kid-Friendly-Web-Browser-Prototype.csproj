@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TimeOut.xaml.cs">
+      <DependentUpon>TimeOut.xaml</DependentUpon>
+    </Compile>
     <Page Include="Browser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +108,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="OnWebsite.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TimeOut.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +183,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\website\sesame_street.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\newLayout\exitbrowser.png" />
+    <Resource Include="images\newLayout\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\newLayout\timeOut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
