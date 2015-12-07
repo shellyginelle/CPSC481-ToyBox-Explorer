@@ -92,7 +92,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             {
                 home_Usr_Ctrl_Click(this, new EventArgs());
             }
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/home.wav");
             player.Play();
         }
 
