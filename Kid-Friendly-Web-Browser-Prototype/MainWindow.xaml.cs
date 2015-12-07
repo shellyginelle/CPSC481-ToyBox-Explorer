@@ -12,8 +12,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private bool catGrid1;
         private bool catGrid2;
         private bool catGrid3;
+        private Boolean favor;
+
         OnWebsite websiteControl = new OnWebsite();
-        private Boolean addedToFaves = false;
         private int page;
 
         public MainWindow()
@@ -24,18 +25,22 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = true;
             catGrid2 = false;
             catGrid3 = false;
+            favor = false;
             page = 1;
             leftArrow.Visibility = Visibility.Hidden;
 
             CategoryGrid1.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
             CategoryGrid2.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
             CategoryGrid3.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
+            OnWebsite.home_Usr_Ctrl_Click += new EventHandler(home);
+            OnWebsite.fav_Usr_Ctrl_Click += new EventHandler(fav);
 
-        }
+    }
 
         private void goToWebsite(object sender, object EventArgs ) 
         {
             CategoryGridDockPanel.Children.Clear();
+
             games.Visibility = Visibility.Hidden;
             video.Visibility = Visibility.Hidden;
             learn.Visibility = Visibility.Hidden;
@@ -47,14 +52,46 @@ namespace Kid_Friendly_Web_Browser_Prototype
             search.Visibility = Visibility.Hidden;
             settings.Visibility = Visibility.Hidden;
 
+
+
             mainPanel.Children.Clear();
             mainPanel.Children.Add(websiteControl);
         }
 
 
-        private void favourite(object sender, object EventArgs)
+        private void fav(object sender, object EventArgs)
         {
-            addedToFaves = true;
+            if (favor)
+            {
+                favor = false;
+            }
+            else{
+                favor = true;
+            }
+            
+        }
+
+        private void home(object sender, object EventArgs)
+        {
+            mainPanel.Children.Clear();
+
+            CategoryGridDockPanel.Children.Clear();
+            CategoryGridDockPanel.Children.Add(new CategoryGrid1());
+            catGrid1 = true;
+            catGrid2 = false;
+            catGrid3 = false;
+            page = 1;
+            leftArrow.Visibility = Visibility.Hidden;
+
+            games.Visibility = Visibility.Visible;
+            video.Visibility = Visibility.Visible;
+            learn.Visibility = Visibility.Visible;
+            heart.Visibility = Visibility.Visible;
+
+            rightArrow.Visibility = Visibility.Visible;
+
+            search.Visibility = Visibility.Visible;
+            settings.Visibility = Visibility.Visible;
         }
 
 
@@ -209,8 +246,15 @@ namespace Kid_Friendly_Web_Browser_Prototype
             leftArrow.Visibility = Visibility.Hidden;
             rightArrow.Visibility = Visibility.Hidden;
 
-            CategoryGridDockPanel.Children.Clear();
-            CategoryGridDockPanel.Children.Add(new FavoritesUC());
+            if (favor)
+            {
+                CategoryGridDockPanel.Children.Clear();
+                CategoryGridDockPanel.Children.Add(new FavoritesUC());
+            }
+            else
+            {
+                CategoryGridDockPanel.Children.Clear();
+            }
         }
     }
 }

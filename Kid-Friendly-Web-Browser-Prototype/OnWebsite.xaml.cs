@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Kid_Friendly_Web_Browser_Prototype
 {
@@ -21,7 +10,10 @@ namespace Kid_Friendly_Web_Browser_Prototype
     public partial class OnWebsite : UserControl
     {
         private int img_position_controller;
-        private Boolean addedToFaves = false;
+
+        public static event EventHandler home_Usr_Ctrl_Click;
+        public static event EventHandler fav_Usr_Ctrl_Click;
+
 
         public OnWebsite()
         {
@@ -50,12 +42,19 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void goHome(object sender, RoutedEventArgs e)
         {
-             //TODO
+            if (home_Usr_Ctrl_Click != null)
+            {
+                home_Usr_Ctrl_Click(this, new EventArgs());
+            }
         }
+
 
         private void addFave_Click(object sender, RoutedEventArgs e)
         {
-            addedToFaves = true;
+            if (fav_Usr_Ctrl_Click != null)
+            {
+                fav_Usr_Ctrl_Click(this, new EventArgs());
+            }
         }
     }
 }
