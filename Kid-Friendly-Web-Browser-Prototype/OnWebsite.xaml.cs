@@ -23,9 +23,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void upScrollClick(object sender, RoutedEventArgs e)
         {
             img_position_controller += 450;
-            if (img_position_controller >= 195)
+            if (img_position_controller >= 130)
             {
-                img_position_controller = 195;
+                img_position_controller = 130;
             }
             sesame_street_img.Margin = new Thickness(0, img_position_controller, 0, 0);
         }
@@ -33,9 +33,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void downScrollClick(object sender, RoutedEventArgs e)
         {
             img_position_controller -= 450;
-            if (img_position_controller <= -1428)
+            if (img_position_controller <= -1493)
             {
-                img_position_controller = -1428;
+                img_position_controller = -1493;
             }
             sesame_street_img.Margin = new Thickness(0, img_position_controller, 0, 0);
         }

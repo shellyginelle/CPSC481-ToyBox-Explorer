@@ -10,7 +10,7 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1135" Width="1920">
 
-            <Image x:Name="sesame_street_img" Source ="images/website/sesame_street.png" Stretch ="Fill" Margin="0,130,0,-1623" Height="2628" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1782"/>
+            <Image x:Name="sesame_street_img" Source ="images/website/sesame_street.png" Stretch ="Fill" Margin="0,130,0,0" Height="2628" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1782"/>
 
             <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top"/>
 

@@ -17,7 +17,7 @@
         <Grid Height="1200" Width="1920">
 
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="600" HorizontalAlignment="Left" Width="1920" BorderBrush="#9E9E9E" Background="#FFFFFF" Foreground="#4DD0E1" Margin="0,0,0,1135"/>
-            <StackPanel Name="mainPanel" HorizontalAlignment="Left" Height="1135" Margin="0,60,0,0" VerticalAlignment="Top" Width="1920"/>
+            <StackPanel ClipToBounds="True" Name="mainPanel" HorizontalAlignment="Left" Margin="0,65,0,0" Width="1920"/>
 
             <Button x:Name="games" Click="games_Click" Margin="417,977,1295,0"  Background="Transparent" Width="200" Height="200">
                 <Image Source="images/newLayout/gamesIcon.png"/>
