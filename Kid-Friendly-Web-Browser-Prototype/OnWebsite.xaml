@@ -10,6 +10,8 @@
     <UserControl.Resources>
         <Image x:Key="heart_full" Source="images/heart_full.png" Stretch="Fill" Width="102" />
         <Image x:Key="heart_empty" Source="images/heart_empty.png" Stretch="Fill" Width="102" />
+        <Image x:Key="back" Source="images/back.png" Stretch="Fill" Width="102" />
+        <Image x:Key="back_grey" Source="images/back_grey.png" Stretch="Fill" Width="102" />
     </UserControl.Resources>
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
@@ -20,7 +22,8 @@
             <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
             <Button x:Name="backButton" Click="goBack_Click" Cursor="Hand"  HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
-                <Image Source="images/back.png" Stretch ="Uniform" Height="95" Width="95"/>
+                <!--<Image Source="images/back.png" Stretch ="Uniform" Height="95" Width="95"/>-->
+                <DynamicResource ResourceKey="back_grey" />
             </Button>
 
             <Button x:Name="homeButton" Click="goHome" Cursor="Hand"  HorizontalAlignment="Left" Margin="295,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >

@@ -25,10 +25,13 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void goBack_Click(object sender, RoutedEventArgs e)
         {
+            backButton.Content = FindResource("back_grey");
             cookieImg.Visibility = Visibility.Hidden;
         }
+
         private void newPage_Click(object sender, RoutedEventArgs e)
         {
+            backButton.Content = FindResource("back");
             cookieImg.Visibility = Visibility.Visible;
         }
 
