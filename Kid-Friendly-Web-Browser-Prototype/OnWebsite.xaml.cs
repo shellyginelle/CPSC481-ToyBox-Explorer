@@ -23,6 +23,15 @@ namespace Kid_Friendly_Web_Browser_Prototype
             heart_on_off = 0;
         }
 
+        private void goBack_Click(object sender, RoutedEventArgs e)
+        {
+            cookieImg.Visibility = Visibility.Hidden;
+        }
+        private void newPage_Click(object sender, RoutedEventArgs e)
+        {
+            cookieImg.Visibility = Visibility.Visible;
+        }
+
         private void upScrollClick(object sender, RoutedEventArgs e)
         {
             img_position_controller += 450;

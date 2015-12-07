@@ -12,7 +12,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private bool catGrid1;
         private bool catGrid2;
         private bool catGrid3;
-        private Boolean favor;
+        private bool catGridFavour;
+        private bool favor;
 
         OnWebsite websiteControl = new OnWebsite();
         private int page;
@@ -25,6 +26,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = true;
             catGrid2 = false;
             catGrid3 = false;
+            catGridFavour = false;
             favor = false;
             page = 1;
             leftArrow.Visibility = Visibility.Hidden;
@@ -34,11 +36,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
             CategoryGrid3.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
             OnWebsite.home_Usr_Ctrl_Click += new EventHandler(home);
             OnWebsite.fav_Usr_Ctrl_Click += new EventHandler(fav);
-
+            FavoritesUC.website_Usr_Ctrl_Click += new EventHandler(goToWebsite);
             resetThickness();
             games.BorderThickness = new Thickness(3);
-
-
         }
 
         private void resetThickness()
@@ -58,6 +58,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void fav(object sender, object EventArgs)
         {
+
             if (favor)
             {
                 favor = false;
@@ -65,7 +66,11 @@ namespace Kid_Friendly_Web_Browser_Prototype
             else{
                 favor = true;
             }
-            
+            if ((catGridFavour == true) && (favor == false))
+            {
+                CategoryGridDockPanel.Children.Clear();
+            }
+
         }
 
         private void home(object sender, object EventArgs)
@@ -100,6 +105,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = true;
             catGrid2 = false;
             catGrid3 = false;
+            catGridFavour = false;
             resetThickness();
             games.BorderThickness = new Thickness(3);
 
@@ -115,6 +121,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = false;
             catGrid2 = true;
             catGrid3 = false;
+            catGridFavour = false;
             resetThickness();
             video.BorderThickness = new Thickness(3);
         }
@@ -131,12 +138,17 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = false;
             catGrid2 = false;
             catGrid3 = true;
+            catGridFavour = false;
             resetThickness();
             learn.BorderThickness = new Thickness(3);
         }
 
         private void heart_Click(object sender, RoutedEventArgs e)
         {
+            catGrid1 = false;
+            catGrid2 = false;
+            catGrid3 = false;
+            catGridFavour = true;
             leftArrow.Visibility = Visibility.Hidden;
             rightArrow.Visibility = Visibility.Hidden;
 

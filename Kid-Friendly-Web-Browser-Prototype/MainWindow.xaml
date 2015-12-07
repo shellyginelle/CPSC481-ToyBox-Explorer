@@ -15,45 +15,47 @@
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
-            
+
 
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="600" HorizontalAlignment="Left" Width="1920" BorderBrush="#9E9E9E" Background="#FFFFFF" Foreground="#4DD0E1" Margin="0,0,0,1135"/>
 
-            <Button x:Name="games" Click="games_Click" Margin="417,984,1311,36"  Background="Transparent" >
+            <Button x:Name="games" Click="games_Click" Cursor="Hand" Margin="417,984,1311,36"  Background="Transparent" >
                 <Image Source="images/game.png" Stretch ="Uniform" Height="177" Width="182"/>
             </Button>
 
-            <Button x:Name="video" Click="videos_Click" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent" >
+            <Button x:Name="video" Click="videos_Click" Cursor="Hand" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent" >
                 <Image Source="images/video.png" Stretch ="Uniform" Height="170" Width="180"/>
             </Button>
 
-            <Button x:Name="learn" Click="learn_Click" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  >
+            <Button x:Name="learn" Click="learn_Click" Cursor="Hand" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  >
                 <Image Source="images/learn.png" Stretch ="Uniform" Height="180" Width="172"/>
             </Button>
 
-            <Button x:Name="heart" Click="heart_Click" Margin="1324,984,416,36"  Background="Transparent" >
+            <Button x:Name="heart" Click="heart_Click" Cursor="Hand" Margin="1324,984,416,36"  Background="Transparent" >
                 <Image Source="images/heart_full.png" Stretch ="Uniform" Height="170" Width="170"/>
             </Button>
 
-            <Button x:Name="rightArrow" Click="rightArrow_Click" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0">
+            <Button x:Name="rightArrow" Click="rightArrow_Click" Cursor="Hand" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0">
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="leftArrow" Click="leftArrow_Click" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="leftArrow" Click="leftArrow_Click" Cursor="Hand" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="search" HorizontalAlignment="Left" Margin="1659,1071,0,0" VerticalAlignment="Top" Width="72" Height="71"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="search" HorizontalAlignment="Left" Cursor="Hand" Margin="1659,1071,0,0" VerticalAlignment="Top" Width="72" Height="71"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/search.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="settings" HorizontalAlignment="Left" Margin="1763,1071,0,0" VerticalAlignment="Top" Width="72" Height="71 "  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="settings" HorizontalAlignment="Left" Cursor="Hand" Margin="1763,1071,0,0" VerticalAlignment="Top" Width="72" Height="71 "  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/settings.png" Stretch ="Uniform"/>
             </Button>
 
 
             <DockPanel Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
-            <StackPanel ClipToBounds="True" x:Name="mainPanel" HorizontalAlignment="Left" Margin="0,65,0,0" Width="1920"/>
+            <StackPanel ClipToBounds="True" x:Name="mainPanel" HorizontalAlignment="Left" Margin="0,65,0,0" Width="1920">
+            </StackPanel>
+
 
             <!--<local:CategoryGrid2 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120" Loaded="CategoryGrid2_Loaded"/>
 -->
