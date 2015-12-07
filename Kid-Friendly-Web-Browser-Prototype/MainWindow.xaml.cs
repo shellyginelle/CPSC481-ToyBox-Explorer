@@ -206,6 +206,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void heart_Click(object sender, RoutedEventArgs e)
         {
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Hidden;
+
             CategoryGridDockPanel.Children.Clear();
             CategoryGridDockPanel.Children.Add(new FavoritesUC());
         }

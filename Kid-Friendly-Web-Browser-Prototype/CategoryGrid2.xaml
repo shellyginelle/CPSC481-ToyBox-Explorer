@@ -9,10 +9,10 @@
              d:DesignHeight="780" d:DesignWidth="1120">
 
     <UserControl.Resources>
-        <Image x:Key="Dora" Source="images/thumbnails/dora.png" Stretch="Fill" Width="484" />
-        <Image x:Key="Trees" Source="images/thumbnails/trees.png" Stretch="Fill" Width="484" />
-        <Image x:Key="Turtles" Source="images/thumbnails/turtles.png" Stretch="Fill" Width="484" />
-        <Image x:Key="Sesame" Source="images/thumbnails/sesame.png" Stretch="Fill" Width="484" />
+        <Image x:Key="Arthur" Source="images/thumbnails/arthur.png" Stretch="Fill" Width="484" />
+        <Image x:Key="Lile" Source="images/thumbnails/lile.png" Stretch="Fill" Width="484" />
+        <Image x:Key="Neopets" Source="images/thumbnails/neopets.png" Stretch="Fill" Width="484" />
+        <Image x:Key="YTKids" Source="images/thumbnails/youtubeKids.png" Stretch="Fill" Width="484" />
     </UserControl.Resources>
 
     <Grid>
@@ -20,7 +20,7 @@
 
         <Button x:Name="TopLeft" Click="website_Click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/dora.png" Stretch ="Fill" Width="484"/> -->
-            <DynamicResource ResourceKey="Turtles" />
+            <DynamicResource ResourceKey="Arthur" />
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
@@ -28,7 +28,7 @@
 
         <Button x:Name="TopRight" Click="website_Click" HorizontalAlignment="Left" Margin="600,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/trees.png" Stretch ="Fill" Width="484"/>-->
-            <DynamicResource ResourceKey="Dora" />
+            <DynamicResource ResourceKey="Lile" />
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
@@ -36,7 +36,7 @@
 
         <Button x:Name="BotLeft" Click="website_Click" HorizontalAlignment="Left" Margin="0,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/turtles.png" Stretch ="Fill" Width="484"/>-->
-            <DynamicResource ResourceKey="Sesame" />
+            <DynamicResource ResourceKey="Neopets" />
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
@@ -44,7 +44,7 @@
 
         <Button x:Name="BotRight" Click="website_Click" HorizontalAlignment="Left" Margin="600,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/sesame.png" Stretch ="Fill" Width="484"/>-->
-            <DynamicResource ResourceKey="Trees" />
+            <DynamicResource ResourceKey="YTKids" />
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
