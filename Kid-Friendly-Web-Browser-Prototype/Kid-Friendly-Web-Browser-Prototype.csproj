@@ -208,6 +208,17 @@
   <ItemGroup>
     <Resource Include="toyboxIntro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="sound\addTofaves.wav" />
+    <Content Include="sound\error.wav" />
+    <Content Include="sound\favourites.wav" />
+    <Content Include="sound\games.wav" />
+    <Content Include="sound\home.wav" />
+    <Content Include="sound\learn.wav" />
+    <Content Include="sound\pageBounce.wav" />
+    <Content Include="sound\tick.wav" />
+    <Content Include="sound\videos.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

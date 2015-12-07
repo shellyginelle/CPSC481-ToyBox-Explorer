@@ -24,6 +24,15 @@
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="PreviewMouseDown">
+                            <SoundPlayerAction Source="sound/tick.wav" />
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
         </Button>
 
         <Button x:Name="TopRight" Click="website_Click" HorizontalAlignment="Left" Margin="600,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
@@ -32,6 +41,15 @@
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="PreviewMouseDown">
+                            <SoundPlayerAction Source="sound/tick.wav" />
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
         </Button>
 
         <Button x:Name="BotLeft" Click="website_Click" HorizontalAlignment="Left" Margin="0,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
@@ -40,6 +58,15 @@
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="PreviewMouseDown">
+                            <SoundPlayerAction Source="sound/tick.wav" />
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
         </Button>
 
         <Button x:Name="BotRight" Click="website_Click" HorizontalAlignment="Left" Margin="600,422,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
@@ -48,6 +75,15 @@
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="PreviewMouseDown">
+                            <SoundPlayerAction Source="sound/tick.wav" />
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
         </Button>
 
     </Grid>

@@ -15,22 +15,37 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         public static event EventHandler home_Usr_Ctrl_Click;
         public static event EventHandler fav_Usr_Ctrl_Click;
+        private bool backButtonHandle;
 
 
         public OnWebsite()
         {
             InitializeComponent();
             heart_on_off = 0;
+            backButtonHandle = false;
         }
 
         private void goBack_Click(object sender, RoutedEventArgs e)
         {
             backButton.Content = FindResource("back_grey");
             cookieImg.Visibility = Visibility.Hidden;
+            if (backButtonHandle)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("sound/tick.wav");
+                player.Play();
+                backButtonHandle = false;
+
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("sound/pageBounce.wav");
+                player.Play();
+            }
         }
 
         private void newPage_Click(object sender, RoutedEventArgs e)
         {
+            backButtonHandle = true;
             backButton.Content = FindResource("back");
             cookieImg.Visibility = Visibility.Visible;
         }

@@ -17,6 +17,15 @@
             <Button.Effect>
                 <DropShadowEffect BlurRadius="13" ShadowDepth="2" />
             </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="PreviewMouseDown">
+                            <SoundPlayerAction Source="sound/tick.wav" />
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
         </Button>
         
         <!--<Image x:Name="heart" Source="images/heart.png" HorizontalAlignment="Left" Height="100" Margin="500,380,0,0" VerticalAlignment="Top" Width="100"/>-->

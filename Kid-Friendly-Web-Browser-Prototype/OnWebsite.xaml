@@ -21,26 +21,63 @@
 
             <Rectangle Fill="#FFF4F4F5" Height="130" Margin="0,0,0,0" Stroke="Black" VerticalAlignment="Top"/>
 
-            <Button x:Name="backButton" Click="goBack_Click" Cursor="Hand"  HorizontalAlignment="Left" Margin="80,10,0,0" VerticalAlignment="Top" Width="106" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="backButton" Click="goBack_Click" HorizontalAlignment="Left" Margin="80,18,0,0" VerticalAlignment="Top" Width="106" Height="100"  Background="Transparent"  BorderThickness="0" >
                 <!--<Image Source="images/back.png" Stretch ="Uniform" Height="95" Width="95"/>-->
                 <DynamicResource ResourceKey="back_grey" />
+
             </Button>
 
-            <Button x:Name="homeButton" Click="goHome" Cursor="Hand"  HorizontalAlignment="Left" Margin="295,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="homeButton" Click="goHome"  HorizontalAlignment="Left" Margin="295,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <Image Source="images/home.png" Stretch ="Uniform" Height="105" Width="102"/>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="sound/tick.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
-            <Button x:Name="favourite" Click="addFave_Click" Cursor="Hand" HorizontalAlignment="Left" Margin="513,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
+            <Button x:Name="favourite" Click="addFave_Click" HorizontalAlignment="Left" Margin="513,10,0,0" VerticalAlignment="Top" Width="108" Height="108"  Background="Transparent"  BorderThickness="0" >
                 <!--<Image Source="images/heart_empty.png" Stretch ="Uniform" Height="102" Width="102"/>-->
                 <DynamicResource ResourceKey="heart_empty" />
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="sound/tick.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
-            <Button x:Name="upScroll" Click="upScrollClick" Cursor="Hand" HorizontalAlignment="Left" Margin="1782,130,0,0" VerticalAlignment="Top" Width="138" Height="501"  Background="Transparent">
+            <Button x:Name="upScroll" Click="upScrollClick"  HorizontalAlignment="Left" Margin="1782,130,0,0" VerticalAlignment="Top" Width="138" Height="501"  Background="White">
                 <Image Source="images/arrowUp.png" Stretch ="Uniform" Height="134" Width="132"/>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="sound/tick.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
 
-            <Button x:Name="downScroll" Click="downScrollClick" Cursor="Hand" HorizontalAlignment="Left" Margin="1782,630,0,0" VerticalAlignment="Top" Width="138" Height="504"  Background="Transparent">
+            <Button x:Name="downScroll" Click="downScrollClick" HorizontalAlignment="Left" Margin="1782,630,0,0" VerticalAlignment="Top" Width="138" Height="504"  Background="white">
                 <Image Source="images/arrowDown.png" Stretch ="Uniform" Height="134" Width="132"/>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="PreviewMouseDown">
+                                <SoundPlayerAction Source="sound/tick.wav" />
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
             </Button>
             <Button x:Name="button" Cursor="Hand" Click="newPage_Click" HorizontalAlignment="Left" Margin="143,448,0,0" VerticalAlignment="Top" Width="716" Height="481" Background="Transparent" BorderThickness="0"/>
 
