@@ -59,10 +59,6 @@
     <Compile Include="TimeOut.xaml.cs">
       <DependentUpon>TimeOut.xaml</DependentUpon>
     </Compile>
-    <Page Include="Browser.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="CategoryGrid1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -85,10 +81,6 @@
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Browser.xaml.cs">
-      <DependentUpon>Browser.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CategoryGrid1.xaml.cs">
@@ -191,9 +183,6 @@
     <Resource Include="images\learn.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\heart_Empty.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\newLayout\bgToyboxs.png" />
     <Resource Include="images\newLayout\exitbrowser.png" />
     <Resource Include="images\newLayout\learnsIcon.png" />
@@ -206,6 +195,9 @@
     <Resource Include="images\thumbnails\clubpenguin.png" />
     <Resource Include="images\thumbnails\funbrain.png" />
     <Resource Include="images\thumbnails\youtubeKids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\heart_empty.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
