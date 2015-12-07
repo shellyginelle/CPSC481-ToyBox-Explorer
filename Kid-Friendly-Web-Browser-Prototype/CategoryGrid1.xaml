@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
              mc:Ignorable="d" 
-             Background="Azure"
              d:DesignHeight="780" d:DesignWidth="1100">
     
     <UserControl.Resources>
@@ -16,7 +15,7 @@
     </UserControl.Resources>
     
     <Grid>
-        <Label x:Name="UserControlNumber" Content="1" FontSize="200" HorizontalAlignment="Left" Margin="490,220,0,0" VerticalAlignment="Top"/>
+       <!-- <Label x:Name="UserControlNumber" Content="1" FontSize="200" HorizontalAlignment="Left" Margin="490,220,0,0" VerticalAlignment="Top"/>-->
 
         <Button x:Name="TopLeft" Click="website_Click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="484" Height="332" Background="Transparent"  BorderThickness="0">
             <!--<Image Source="images/thumbnails/dora.png" Stretch ="Fill" Width="484"/> -->
