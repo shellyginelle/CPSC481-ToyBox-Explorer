@@ -11,6 +11,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
     {
         private int img_position_controller;
 
+        private int heart_on_off;
+
         public static event EventHandler home_Usr_Ctrl_Click;
         public static event EventHandler fav_Usr_Ctrl_Click;
 
@@ -18,6 +20,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
         public OnWebsite()
         {
             InitializeComponent();
+            heart_on_off = 0;
         }
 
         private void upScrollClick(object sender, RoutedEventArgs e)
@@ -51,7 +54,17 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void addFave_Click(object sender, RoutedEventArgs e)
         {
-            favourite.Content = FindResource("heart_full");
+            if (heart_on_off == 0)
+            {
+                heart_on_off = 1;
+                favourite.Content = FindResource("heart_full");
+            }
+            else
+            {
+                heart_on_off = 0;
+                favourite.Content = FindResource("heart_empty");
+            }
+
             if (fav_Usr_Ctrl_Click != null)
             {
                 fav_Usr_Ctrl_Click(this, new EventArgs());
