@@ -51,6 +51,7 @@ namespace Kid_Friendly_Web_Browser_Prototype
 
         private void addFave_Click(object sender, RoutedEventArgs e)
         {
+            favourite.Content = FindResource("heart_full");
             if (fav_Usr_Ctrl_Click != null)
             {
                 fav_Usr_Ctrl_Click(this, new EventArgs());
