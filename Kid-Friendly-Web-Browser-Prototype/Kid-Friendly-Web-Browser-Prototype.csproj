@@ -161,44 +161,44 @@
     <Resource Include="images\arrowUp.png" />
     <Resource Include="images\back.png" />
     <Resource Include="images\controller.png" />
-    <Resource Include="images\heart.png" />
     <Resource Include="images\home.png" />
     <Resource Include="images\leftArrow.png" />
     <Resource Include="images\rightArrow.png" />
     <Resource Include="images\search.png" />
     <Resource Include="images\settings.png" />
-    <Resource Include="images\video.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\book.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\heartPlus.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\newLayout\addFave.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="images\website\sesame_street.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\newLayout\exitbrowser.png" />
-    <Resource Include="images\newLayout\reset.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\newLayout\timeOut.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="images\newLayout\bgToyboxs.png" />
-    <Resource Include="images\newLayout\favesIcon.png" />
-    <Resource Include="images\newLayout\gamesIcon.png" />
-    <Resource Include="images\newLayout\learnsIcon.png" />
-    <Resource Include="images\newLayout\videosIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\thumbnails\arthur.png" />
     <Resource Include="images\thumbnails\lile.png" />
     <Resource Include="images\thumbnails\neopets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\heart_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\learn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\heart_Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\newLayout\bgToyboxs.png" />
+    <Resource Include="images\newLayout\exitbrowser.png" />
+    <Resource Include="images\newLayout\learnsIcon.png" />
+    <Resource Include="images\newLayout\reset.png" />
+    <Resource Include="images\newLayout\timeOut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

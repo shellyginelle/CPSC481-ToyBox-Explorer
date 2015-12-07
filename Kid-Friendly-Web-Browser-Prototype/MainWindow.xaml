@@ -9,30 +9,30 @@
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         ContentRendered="progressBarChange">
-    <Window.Background>
-        <ImageBrush ImageSource="images/newLayout/bgToyboxs.png"/>
-    </Window.Background>
+
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
 
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="600" HorizontalAlignment="Left" Width="1920" BorderBrush="#9E9E9E" Background="#FFFFFF" Foreground="#4DD0E1" Margin="0,0,0,1135"/>
-            <StackPanel ClipToBounds="True" Name="mainPanel" HorizontalAlignment="Left" Margin="0,65,0,0" Width="1920"/>
 
-            <Button x:Name="games" Click="games_Click" Margin="417,977,1295,0"  Background="Transparent" Width="200" Height="200">
-                <Image Source="images/newLayout/gamesIcon.png"/>
-            </Button>
-            <Button x:Name="video" Click="videos_Click" HorizontalAlignment="Left" Margin="710,976,0,0" Background="Transparent" Width="200" Height="200">
-                <Image Source="images/newLayout/videosIcon.png"/>
-            </Button>
-            <Button x:Name="learn" Click="learn_Click" Margin="1010,953,720,0" Background="Transparent" Width="200" Height="220">
-                <Image Source="images/newLayout/learnsIcon.png"/>
-            </Button>
-            <Button x:Name="heart" Click="heart_Click" Margin="1300,945,370,0"  Background="Transparent" Width="250" Height="250">
-                <Image Source="images/newLayout/favesIcon.png"/>
+            <Button x:Name="games" Click="games_Click" Margin="417,984,1311,36"  Background="Transparent" >
+                <Image Source="images/game.png" Stretch ="Uniform" Height="177" Width="182"/>
             </Button>
 
-            <Button x:Name="rightArrow" Click="rightArrow_Click" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="video" Click="videos_Click" HorizontalAlignment="Left" Margin="721,984,0,36" Width="180"  Background="Transparent" >
+                <Image Source="images/video.png" Stretch ="Uniform" Height="170" Width="180"/>
+            </Button>
+
+            <Button x:Name="learn" Click="learn_Click" Margin="1020,984,718,36" RenderTransformOrigin="0.5,0.5"  Background="Transparent"  >
+                <Image Source="images/learn.png" Stretch ="Uniform" Height="180" Width="172"/>
+            </Button>
+
+            <Button x:Name="heart" Click="heart_Click" Margin="1324,984,416,36"  Background="Transparent" >
+                <Image Source="images/heart_full.png" Stretch ="Uniform" Height="170" Width="170"/>
+            </Button>
+
+            <Button x:Name="rightArrow" Click="rightArrow_Click" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0">
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
@@ -50,6 +50,7 @@
 
 
             <DockPanel Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
+            <StackPanel ClipToBounds="True" x:Name="mainPanel" HorizontalAlignment="Left" Margin="0,65,0,0" Width="1920"/>
 
             <!--<local:CategoryGrid2 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120" Loaded="CategoryGrid2_Loaded"/>
 -->

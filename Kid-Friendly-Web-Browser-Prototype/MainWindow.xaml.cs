@@ -35,25 +35,22 @@ namespace Kid_Friendly_Web_Browser_Prototype
             OnWebsite.home_Usr_Ctrl_Click += new EventHandler(home);
             OnWebsite.fav_Usr_Ctrl_Click += new EventHandler(fav);
 
-    }
+            resetThickness();
+            games.BorderThickness = new Thickness(3);
+
+
+        }
+
+        private void resetThickness()
+        {
+            games.BorderThickness = new Thickness(0);
+            video.BorderThickness = new Thickness(0);
+            heart.BorderThickness = new Thickness(0);
+            learn.BorderThickness = new Thickness(0);
+        }
 
         private void goToWebsite(object sender, object EventArgs ) 
         {
-            CategoryGridDockPanel.Children.Clear();
-
-            games.Visibility = Visibility.Hidden;
-            video.Visibility = Visibility.Hidden;
-            learn.Visibility = Visibility.Hidden;
-            heart.Visibility = Visibility.Hidden;
-
-            rightArrow.Visibility = Visibility.Hidden;
-            leftArrow.Visibility = Visibility.Hidden;
-
-            search.Visibility = Visibility.Hidden;
-            settings.Visibility = Visibility.Hidden;
-
-
-
             mainPanel.Children.Clear();
             mainPanel.Children.Add(websiteControl);
         }
@@ -74,24 +71,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
         private void home(object sender, object EventArgs)
         {
             mainPanel.Children.Clear();
-
-            CategoryGridDockPanel.Children.Clear();
-            CategoryGridDockPanel.Children.Add(new CategoryGrid1());
-            catGrid1 = true;
-            catGrid2 = false;
-            catGrid3 = false;
-            page = 1;
-            leftArrow.Visibility = Visibility.Hidden;
-
-            games.Visibility = Visibility.Visible;
-            video.Visibility = Visibility.Visible;
-            learn.Visibility = Visibility.Visible;
-            heart.Visibility = Visibility.Visible;
-
-            rightArrow.Visibility = Visibility.Visible;
-
-            search.Visibility = Visibility.Visible;
-            settings.Visibility = Visibility.Visible;
         }
 
 
@@ -121,6 +100,9 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = true;
             catGrid2 = false;
             catGrid3 = false;
+            resetThickness();
+            games.BorderThickness = new Thickness(3);
+
         }
 
         private void videos_Click(object sender, RoutedEventArgs e)
@@ -133,6 +115,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = false;
             catGrid2 = true;
             catGrid3 = false;
+            resetThickness();
+            video.BorderThickness = new Thickness(3);
         }
 
 
@@ -147,6 +131,26 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGrid1 = false;
             catGrid2 = false;
             catGrid3 = true;
+            resetThickness();
+            learn.BorderThickness = new Thickness(3);
+        }
+
+        private void heart_Click(object sender, RoutedEventArgs e)
+        {
+            leftArrow.Visibility = Visibility.Hidden;
+            rightArrow.Visibility = Visibility.Hidden;
+
+            if (favor)
+            {
+                CategoryGridDockPanel.Children.Clear();
+                CategoryGridDockPanel.Children.Add(new FavoritesUC());
+            }
+            else
+            {
+                CategoryGridDockPanel.Children.Clear();
+            }
+            resetThickness();
+            heart.BorderThickness = new Thickness(3);
         }
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
@@ -241,20 +245,6 @@ namespace Kid_Friendly_Web_Browser_Prototype
             }
         }
 
-        private void heart_Click(object sender, RoutedEventArgs e)
-        {
-            leftArrow.Visibility = Visibility.Hidden;
-            rightArrow.Visibility = Visibility.Hidden;
-
-            if (favor)
-            {
-                CategoryGridDockPanel.Children.Clear();
-                CategoryGridDockPanel.Children.Add(new FavoritesUC());
-            }
-            else
-            {
-                CategoryGridDockPanel.Children.Clear();
-            }
-        }
+       
     }
 }
