@@ -9,10 +9,13 @@
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         ContentRendered="progressBarChange">
-
+    <Window.Background>
+        <ImageBrush ImageSource="images/newLayout/bgToyboxs.png"/>
+    </Window.Background>
 
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Height="1200" Width="1920">
+            
 
             <ProgressBar Name="pbStatus" Minimum="0" Maximum="600" HorizontalAlignment="Left" Width="1920" BorderBrush="#9E9E9E" Background="#FFFFFF" Foreground="#4DD0E1" Margin="0,0,0,1135"/>
 
