@@ -31,14 +31,14 @@ namespace Kid_Friendly_Web_Browser_Prototype
             cookieImg.Visibility = Visibility.Hidden;
             if (backButtonHandle)
             {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("sound/tick.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
                 player.Play();
                 backButtonHandle = false;
 
             }
             else
             {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer("sound/pageBounce.wav");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/pageBounce.wav");
                 player.Play();
             }
         }
@@ -56,8 +56,16 @@ namespace Kid_Friendly_Web_Browser_Prototype
             if (img_position_controller >= 130)
             {
                 img_position_controller = 130;
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/pageBounce.wav");
+                player.Play();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+                player.Play();
             }
             sesame_street_img.Margin = new Thickness(0, img_position_controller, 0, 0);
+            
         }
 
         private void downScrollClick(object sender, RoutedEventArgs e)
@@ -66,8 +74,16 @@ namespace Kid_Friendly_Web_Browser_Prototype
             if (img_position_controller <= -1493)
             {
                 img_position_controller = -1493;
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/pageBounce.wav");
+                player.Play();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+                player.Play();
             }
             sesame_street_img.Margin = new Thickness(0, img_position_controller, 0, 0);
+        
         }
 
         private void goHome(object sender, RoutedEventArgs e)
@@ -76,6 +92,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             {
                 home_Usr_Ctrl_Click(this, new EventArgs());
             }
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+            player.Play();
         }
 
 
@@ -96,6 +114,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             {
                 fav_Usr_Ctrl_Click(this, new EventArgs());
             }
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+            player.Play();
         }
     }
 }

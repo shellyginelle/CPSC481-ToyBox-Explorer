@@ -22,6 +22,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             {
                 website_Usr_Ctrl_Click(this, new EventArgs());
             }
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+            player.Play();
         }
     }
 }

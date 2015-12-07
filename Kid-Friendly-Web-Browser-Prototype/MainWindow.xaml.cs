@@ -108,6 +108,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGridFavour = false;
             resetThickness();
             games.BorderThickness = new Thickness(3);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/games.wav");
+            player.Play();
 
         }
 
@@ -124,6 +126,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGridFavour = false;
             resetThickness();
             video.BorderThickness = new Thickness(3);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/videos.wav");
+            player.Play();
         }
 
 
@@ -141,6 +145,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             catGridFavour = false;
             resetThickness();
             learn.BorderThickness = new Thickness(3);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/learn.wav");
+            player.Play();
         }
 
         private void heart_Click(object sender, RoutedEventArgs e)
@@ -163,6 +169,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
             }
             resetThickness();
             heart.BorderThickness = new Thickness(3);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/favourites.wav");
+            player.Play();
         }
 
         private void rightArrow_Click(object sender, RoutedEventArgs e)
@@ -208,6 +216,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
                 catGrid2 = false;
                 catGrid3 = false;
             }
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+            player.Play();
         }
 
         private void leftArrow_Click(object sender, RoutedEventArgs e)
@@ -255,6 +265,8 @@ namespace Kid_Friendly_Web_Browser_Prototype
                 catGrid2 = false;
                 catGrid3 = true;
             }
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("../../sound/tick.wav");
+            player.Play();
         }
 
        
