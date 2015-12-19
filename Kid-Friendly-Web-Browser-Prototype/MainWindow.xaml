@@ -9,33 +9,7 @@
         WindowStyle="None" ResizeMode="NoResize"  
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         ContentRendered="progressBarChange">
-    <Window.Resources>
-        <Storyboard x:Key="LoadingScreen">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LoadingScreenSplash">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="LoadingScreenSplash">
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.5" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.5" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="LoadingScreenCover">
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.7" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="LoadingScreenCover">
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.7" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-        </Storyboard>
-    </Window.Resources>
-    <Window.Triggers>
-        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
-            <BeginStoryboard Storyboard="{StaticResource LoadingScreen}"/>
-        </EventTrigger>
-    </Window.Triggers>
+
     <Window.Background>
         <ImageBrush ImageSource="images/newLayout/bgToyboxs.png"/>
     </Window.Background>
@@ -62,11 +36,11 @@
                 <Image Source="images/heart_full.png" Stretch ="Uniform" Height="170" Width="170"/>
             </Button>
 
-            <Button x:Name="rightArrow" Click="rightArrow_Click" Margin="1659,425,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0">
+            <Button x:Name="rightArrow" Click="rightArrow_Click" Margin="1659,420,85,0" VerticalAlignment="Top" Height="240"  Background="Transparent"  BorderThickness="0">
                 <Image Source="images/rightArrow.png" Stretch ="Uniform"/>
             </Button>
 
-            <Button x:Name="leftArrow" Click="leftArrow_Click" HorizontalAlignment="Left" Margin="110,425,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
+            <Button x:Name="leftArrow" Click="leftArrow_Click" HorizontalAlignment="Left" Margin="85,420,0,0" VerticalAlignment="Top" Width="176" Height="240"  Background="Transparent"  BorderThickness="0"  >
                 <Image Source="images/leftArrow.png" Stretch ="Uniform"/>
             </Button>
 
@@ -82,16 +56,7 @@
             <DockPanel Name="CategoryGridDockPanel" HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1100" />
             <StackPanel ClipToBounds="True" x:Name="mainPanel" HorizontalAlignment="Left" Margin="0,65,0,0" Width="1920">
             </StackPanel>
-            <Grid x:Name="LoadingScreenCover" Height="1200" Width="1920" Background="White"/>
-            <Grid x:Name="LoadingScreenSplash" Height="1200" Width="1920" Opacity="0">
-                <Grid.Background>
-                    <ImageBrush ImageSource="toyboxIntro.png"/>
-                </Grid.Background>
-            </Grid>
 
-
-            <!--<local:CategoryGrid2 HorizontalAlignment="Left" Margin="410,150,0,0" VerticalAlignment="Top" Height="770" Width="1120" Loaded="CategoryGrid2_Loaded"/>
--->
         </Grid>
     </Viewbox>
 

@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Kid_Friendly_Web_Browser_Prototype"
              mc:Ignorable="d" 
-             d:DesignHeight="780" d:DesignWidth="1120">
+             d:DesignHeight="755" Width="1086">
 
     <UserControl.Resources>
         <Image x:Key="animaljam" Source="images/thumbnails/animaljam.png" Stretch="Fill" Width="484" />
